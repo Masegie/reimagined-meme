@@ -1,41 +1,69 @@
 <template>
-  <ul class="divide-y divide-gray-200">
-    <li v-for="person in people" :key="person.email" class="py-4 flex">
-      <img class="h-10 w-10 rounded-full" :src="person.image" alt="" />
-      <div class="ml-3">
-        <p class="text-sm font-medium text-gray-900">{{ person.name }}</p>
-        <p class="text-sm text-gray-500">{{ person.email }}</p>
+  <div
+    class="relative flex max-h-screen flex-col justify-center overflow-hidden bg-white py-6 sm:py-12"
+  >
+    <!-- //layar -->
+    <div class="justify-center">
+      <div
+        class="relative z-0 bg-midnight px-6 pt-10 pb-8 shadow-xl ring-2 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-lg sm:px-10"
+      >
+        <div class="mx-auto">
+          <div class="">
+            <div
+              class="font-cursive text-midnight relative text-center text-4xl bg-neonGreen px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+            >
+              Hello
+            </div>
+            <div class="flex">
+              <div
+                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-center text-4xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+              >
+                content content content contentcontentcontentcontent content
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </li>
-  </ul>
+      <div class="fixed top-12 left-0 right-0">
+        <div v-for="n in 49" :key="n">
+          <div
+            class="opacity-20 bg-neonGreen mt-1 pt-1 shadow-xl ring-2 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-lg sm:px-10"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- button -->
+    <div class="text-center text-4xl flex items-stretch mt-8">
+      <div
+        class="grow font-rubik text-yellow2 bg-yellow1 px-6 py-12 shadow-xl ring-4 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-sm sm:px-10"
+      >
+        btn {{ n }}
+      </div>
+      <div
+        class="grow font-rubik text-yellow2 bg-yellow1 px-6 py-12 shadow-xl ring-4 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-sm sm:px-10"
+      >
+        btn 2
+      </div>
+      <div
+        class="grow font-rubik text-yellow2 bg-yellow1 px-6 py-12 shadow-xl ring-4 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-sm sm:px-10"
+      >
+        btn 3
+      </div>
+      <div
+        class="flex-none text-manggo2 font-rubik w-32 h-32 bg-manggo px-6 py-12 shadow-xl ring-4 ring-darkGrey sm:mx-8 sm:max-w-full sm:rounded-full sm:px-10"
+      >
+        b
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-const people = [
-  {
-    name: "Calvin Hawkins",
-    email: "calvin.hawkins@example.com",
-    image:
-      "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Kristen Ramos",
-    email: "kristen.ramos@example.com",
-    image:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Ted Fox Led",
-    email: "ted.fox@example.com",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-];
-
 export default {
-  setup() {
+  data() {
     return {
-      people,
+      n: 1,
     };
   },
 };
