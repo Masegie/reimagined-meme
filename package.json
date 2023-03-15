@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "typed.js": "^2.0.132",
+    "vue": "^3.2.45",
+    "vue-typed-js": "^0.1.2",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
