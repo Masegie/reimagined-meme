@@ -18,15 +18,15 @@
             </div>
             <div class="">
               <div
-                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-center text-4xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-left leading-relaxed text-3xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
               >
               <div class="mb-4">
-                <span class="text-3xl text-black">
+                <span >
                   {{ displayText.join('') }}
                 </span>
               </div>
               <div >
-                <span class="text-3xl text-black">
+                <span>
                   {{ displayText2nd.join('') }}
                 </span>
               </div>
@@ -124,16 +124,12 @@ export default {
     title: String,
     speed: {
       type: Number,
-      default: 20
+      default: 60
     },
     deleteSpeed: {
       type: Number,
       default: 166
     },
-    words: {
-      type: Array,
-      default: [' applesss.. ']
-    }
   },
   computed: {
     // can adjust speeds based on other factors if needed
