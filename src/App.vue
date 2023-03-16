@@ -43,6 +43,14 @@
         </div>
       </div>
     </div>
+    
+    <div>
+      <button @click="playMusic">Play Music</button>
+      <audio ref="bgMusic" >
+      <source src="./assets/backsound.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  
 
     <!-- button -->
     <div class=" text-center items-center justify-center text-4xl mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:ml-8 sm:mr-8 lg:h-36 sm:h-24 ">
@@ -58,12 +66,12 @@
         <div class="absolute h-full inset-x-0  bg-yellow3 border-4 border-yellow3 rounded-sm "></div>
         
         <!-- text -->
-        <div v-if="isMeActive === false" class="relative text-yellow2 bg-yellow1 py-8 px-10 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"> 
-          <div class="">
+        <div @click="play" v-if="isMeActive === false" class="relative text-yellow2 bg-yellow1 py-8 px-10 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"> 
+          <div  class="">
             Me
           </div>
         </div> 
-        <div v-if="isMeActive === true" class="relative text-white bg-yellow2 py-8 px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"> 
+        <div  @click="play" v-if="isMeActive === true" class="relative text-white bg-yellow2 py-8 px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"> 
           <div class="">
             Me
           </div>
@@ -71,7 +79,7 @@
       </button>
 
       <button
-        class="relative grow font-rubik "
+        class="relative grow font-rubik"
         @click="() => myWork()"
       >
         <!-- background -->
@@ -119,7 +127,17 @@
 </template>
 
 <script>
+import { useSound } from '@vueuse/sound'
+import buttonSfx from './assets/buttonEffect3.mp3'
+import backsoundSfx from './assets/backsound.mp3'
 export default {
+  setup() {
+    const { play } = useSound(buttonSfx)
+
+    return {
+      play,
+    }
+  },
   props: {
     title: String,
     speed: {
@@ -156,9 +174,14 @@ export default {
       displayText2nd: [],
       currentWord2nd: "",
       wordIdx2nd: 0,
+
+      file: "./assets/buttonEffect3.mp3"
     };
   },
   methods: {
+    playMusic() {
+      this.$refs.bgMusic.play();
+    },
     start() {
       if (this.content && this.content.length > 0) {
         this.currentWord = this.content[this.wordIdx].split("");
