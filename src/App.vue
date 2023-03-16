@@ -182,7 +182,7 @@ export default {
       this.displayText=[""]
       this.displayText2nd=[""]
       this.content=["My name is Masegie Handoyo Putra, but u can call me egik"]
-      this.content2nd=["My hours are mostly spent as a full-stack product designer at Gotrade↗, but in my spare time I watch lots of Youtube videos and Netflix, listen to RnBs, and last but not least, sleep."]
+      this.content2nd=["My hours are mostly spent as a full-stack product designer at Gotrade↗, but in my spare time I watch lots of Youtube videos and Netflix, listen to RnBs, and last but not least, sleep. My hours are mostly spent as a full-stack product designer at Gotrade↗, but in my spare time I watch lots of Youtube videos and Netflix, listen to RnBs, and last but not least, sleep."]
 
       this.start();
       this.start2nd();
