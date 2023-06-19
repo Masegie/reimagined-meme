@@ -6,18 +6,18 @@
 
     <div class="">
       <div
-        class="relative flex overflow-auto h-full z-0 bg-midnight px-6 pt-10 pb-8 shadow-xl ring-2 ring-darkGrey sm:mx-8 sm:rounded-md sm:px-10"
+        class="relative flex overflow-auto h-full z-0 bg-midnight px-6 pt-10 pb-8 shadow-xl ring-2 ring-darkGrey mx-4 rounded-md"
       >
         <div class="mx-auto">
           <div class="">
             <div
-              class="font-cursive text-midnight relative text-center text-3xl bg-neonGreen px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+              class="font-cursive text-midnight relative text-center text-3xl bg-neonGreen px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
             >
               Hello
             </div>
             <div class="">
               <div
-                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-left leading-relaxed text-2xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+                class="grow mt-4 font-cursive text-neonGreen relative text-left leading-relaxed text-2xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
               >
                 <div class="mb-4">
                   <span>
@@ -51,7 +51,7 @@
     </div> -->
 
     <div class="flex">
-      <div class="flex-auto mx-4 my-4 lg:text-4xl sm:mt-8 sm:text-xl md:text-2xl sm:mx-8">
+      <div class="lg:flex flex-auto mx-4 my-4 lg:text-4xl sm:mt-8 text-xl sm:text-2xl sm:mx-8">
         <!-- ME BUTTON -->
         <button class="relative grow font-rubik" @click="() => me()">
           <!-- background -->
@@ -173,8 +173,7 @@
         </div>
       </button>
     </div>
-
-<!-- CV -->
+      <!-- CV -->
       <div class="flex-none mx-4 my-4  lg:text-4xl sm:mt-8  text-2xl sm:mx-8">
         <button class="relative font-rubik ">
           <!-- background -->
@@ -195,7 +194,7 @@
             <audio ref="typingMusic" loop>
               <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
-            <div class=" py-10 px-10 sm:py-8  sm:px-10">CV</div>
+            <div class=" py-4 px-6 sm:py-8 sm:px-10">CV</div>
           </div>
         </button>
       </div>
