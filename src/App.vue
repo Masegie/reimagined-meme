@@ -11,13 +11,13 @@
         <div class="mx-auto">
           <div class="">
             <div
-              class="font-cursive text-midnight relative text-center text-4xl bg-neonGreen px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+              class="font-cursive text-midnight relative text-center text-3xl bg-neonGreen px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
             >
               Hello
             </div>
             <div class="">
               <div
-                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-left leading-relaxed text-3xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
+                class="grow mr-4 mt-4 font-cursive text-neonGreen relative text-left leading-relaxed text-2xl ring-2 ring-neonGreen bg-neonGreen2 px-6 pt-10 pb-8 shadow-sm sm:mx-auto sm:rounded-lg sm:px-10"
               >
                 <div class="mb-4">
                   <span>
@@ -34,13 +34,13 @@
           </div>
         </div>
       </div>
-      <div class="fixed top-12 left-0 right-0 max-h-full">
+      <!-- <div class="fixed top-12 left-0 right-0 max-h-full">
         <div v-for="n in 85" :key="n">
           <div
             class="opacity-10 bg-neonGreen mt-1 pt-1 shadow-xl sm:mx-8 sm:max-w-full sm:rounded-lg sm:px-10"
           ></div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- <div>
@@ -50,52 +50,51 @@
       </audio>
     </div> -->
 
-    <!-- button -->
-    <div
-      class="text-center items-center text-4xl mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-8 sm:ml-8 sm:mr-8 lg:h-36 sm:h-24"
-    >
-      <button class="relative grow font-rubik" @click="() => me()">
-        <!-- background -->
-        <div
-          v-if="isMeActive === false"
-          class="absolute h-full inset-x-0 -bottom-6 bg-darkGrey opacity-40 rounded-sm"
-        ></div>
-        <div
-          v-if="isMeActive === true"
-          class="absolute h-full inset-x-0 -bottom-4 bg-darkGrey opacity-40 rounded-sm"
-        ></div>
-        <div
-          class="absolute h-full inset-x-0 -bottom-4 bg-yellow2 border-4 border-yellow3 rounded-sm"
-        ></div>
-        <div
-          class="absolute h-full inset-x-0 -bottom-4 bg-yellow2 border-4 border-yellow3 rounded-sm"
-        ></div>
-        <div
-          class="absolute h-full inset-x-0 bg-yellow3 border-t-8 border-yellow1 rounded-sm"
-        ></div>
-        <!-- text -->
-        <div
-          @click="play"
-          v-if="isMeActive === false"
-          class="relative text-yellow2 bg-yellow1 py-8 px-10 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
-        >
-          <audio ref="typingMusic" loop>
-            <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
-          </audio>
-          <div class="">Me</div>
-        </div>
-        <div
-          @click="play"
-          v-if="isMeActive === true"
-          class="relative text-white bg-yellow2 py-8 px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
-        >
-          <audio ref="typingMusic" loop>
-            <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
-          </audio>
-          <div class="">Me</div>
-        </div>
-      </button>
-
+    <div class="flex">
+      <div class="flex-auto mx-4 my-4 lg:text-4xl sm:mt-8 sm:text-xl md:text-2xl sm:mx-8">
+        <!-- ME BUTTON -->
+        <button class="relative grow font-rubik" @click="() => me()">
+          <!-- background -->
+          <div
+            v-if="isMeActive === false"
+            class="absolute h-full inset-x-0 -bottom-6 bg-darkGrey opacity-40 rounded-sm"
+          ></div>
+          <div
+            v-if="isMeActive === true"
+            class="absolute h-full inset-x-0 -bottom-4 bg-darkGrey opacity-40 rounded-sm"
+          ></div>
+          <div
+            class="absolute h-full inset-x-0 -bottom-4 bg-yellow2 border-4 border-yellow3 rounded-sm"
+          ></div>
+          <div
+            class="absolute h-full inset-x-0 -bottom-4 bg-yellow2 border-4 border-yellow3 rounded-sm"
+          ></div>
+          <div
+            class="absolute h-full inset-x-0 bg-yellow3 border-t-8 border-yellow1 rounded-sm"
+          ></div>
+          <!-- text -->
+          <div
+            @click="play"
+            v-if="isMeActive === false"
+            class="relative text-yellow2 bg-yellow1 py-2 sm:py-8 px-5 sm:px-10 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
+          >
+            <audio ref="typingMusic" loop>
+              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="">Me</div>
+          </div>
+          <div
+            @click="play"
+            v-if="isMeActive === true"
+            class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
+          >
+            <audio ref="typingMusic" loop>
+              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="">Me</div>
+          </div>
+        </button>
+        <!-- mY WORK BUTTON -->
       <button class="relative grow font-rubik" @click="() => myWork()">
         <!-- background -->
         <div
@@ -116,26 +115,26 @@
         <div
           @click="play"
           v-if="isMyWorkActive === false"
-          class="relative text-yellow2 bg-yellow1 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
+          class="relative text-yellow2 bg-yellow1 border-4 py-2 sm:py-8 px-5 sm:px-10 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
         >
           <audio ref="typingMusic" loop>
             <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
           </audio>
-          <div class="py-8 px-10">My Work</div>
+          <div >Work</div>
         </div>
         <div
           @click="play"
           v-if="isMyWorkActive === true"
-          class="relative text-white bg-yellow2 py-8 px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
+          class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
         >
           <audio ref="typingMusic" loop>
             <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
           </audio>
-          <div class="">My Work</div>
+          <div class="">Work</div>
         </div>
       </button>
-
-      <button class="relative grow font-rubik" @click="() => myContact()">
+      <!-- MY CONTACT -->
+      <button class="mt-6 md:mt-0 relative grow font-rubik" @click="() => myContact()">
         <!-- background -->
         <div
           v-if="isMyContactActive === false"
@@ -155,17 +154,17 @@
         <div
           @click="play"
           v-if="isMyContactActive === false"
-          class="relative text-yellow2 bg-yellow1 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
+          class="relative text-yellow2 bg-yellow1 border-4 py-2 sm:py-8 px-5 sm:px-10 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
         >
           <audio ref="typingMusic" loop>
             <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
           </audio>
-          <div class="py-8 px-10">Contact</div>
+          <div >Contact</div>
         </div>
         <div
           @click="play"
           v-if="isMyContactActive === true"
-          class="relative text-white bg-yellow2 py-8 px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
+          class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
         >
           <audio ref="typingMusic" loop>
             <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
@@ -173,37 +172,38 @@
           <div class="">Contact</div>
         </div>
       </button>
-      <button class="relative grow font-rubik ml-auto">
-        <!-- background -->
-        <div
-          v-if="isMyContactActive === false"
-          class="absolute h-full inset-x-0 -bottom-6 bg-darkGrey opacity-40 rounded-full transition transform duration-250 active:bottom-5"
-        ></div>
-        <div
-          v-if="isMyContactActive === true"
-          class="absolute h-full inset-x-0 -bottom-4 bg-darkGrey opacity-40 rounded-full transition transform duration-150 active:bottom-5"
-        ></div>
-        <div
-          class="absolute h-full inset-x-0 -bottom-4 bg-manggo2 border-4 border-manggo3 rounded-full"
-        ></div>
-        <!-- text -->
-        <div
-          @click="play"
-          class="relative text-manggo3 bg-manggo border-4 border-manggo3 rounded-full transition transform duration-200 active:translate-y-3 hover:text-white active:bg-manggo3"
-        >
-          <audio ref="typingMusic" loop>
-            <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
-          </audio>
-          <div class="py-8 px-10">CV</div>
-        </div>
-      </button>
-      <!-- <div
-        class="flex-none flex text-manggo2 font-rubik bg-manggo shadow-xl md:mr-8 ring-4 ring-yellow3 sm:mx-4 lg:mx-8 sm:max-w-full rounded-full"
-      >
-        <div class="m-auto">s</div>
-      </div> -->
     </div>
+
+<!-- CV -->
+      <div class="flex-none mx-4 my-4  lg:text-4xl sm:mt-8  text-2xl sm:mx-8">
+        <button class="relative font-rubik ">
+          <!-- background -->
+          <div
+            class="absolute h-full inset-x-0 -bottom-6 bg-darkGrey opacity-40 rounded-full transition transform duration-250 active:bottom-5"
+          ></div>
+          <div
+            class="absolute h-full inset-x-0 -bottom-4 bg-darkGrey opacity-40 rounded-full transition transform duration-150 active:bottom-5"
+          ></div>
+          <div
+            class="absolute h-full inset-x-0 -bottom-4 bg-manggo2 border-4 border-manggo3 rounded-full"
+          ></div>
+          <!-- text -->
+          <div
+            @click="play"
+            class="relative text-manggo3 bg-manggo border-4 border-manggo3 rounded-full transition transform duration-200 active:translate-y-3 hover:text-white active:bg-manggo3"
+          >
+            <audio ref="typingMusic" loop>
+              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio>
+            <div class=" py-10 px-10 sm:py-8  sm:px-10">CV</div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- button -->
+   
   </div>
+  
 </template>
 
 <script>
@@ -333,7 +333,7 @@ export default {
       this.displayText = [""];
       this.displayText2nd = [""];
       this.content = ["Ini halaman My Contact"];
-      this.content2nd = ["Email : masegihandoyo@gmail.com"];
+      this.content2nd = ["Email : masegi handoyo @gmail.com"];
 
       this.start();
       this.start2nd();
