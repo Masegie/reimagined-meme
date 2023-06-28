@@ -51,7 +51,6 @@
     </div> -->
 
     <!-- button -->
-
     <div class="flex">
       <div
         class="lg:flex flex-auto mx-4 my-4 lg:text-4xl sm:mt-8 text-xl sm:text-2xl sm:mx-8"
