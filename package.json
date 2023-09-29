@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.18",
     "@vueuse/sound": "^2.0.1",
     "typed.js": "^2.0.132",
     "vue": "^3.2.45",
