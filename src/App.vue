@@ -1,42 +1,47 @@
 <template>
   <div
-    class="relative min-h-screen max-h-screen grid grid-rows-1 place-items-stretch content-between overflow-hidden bg-darkGrey sm:py-12"
+    class="relative min-h-screen max-h-screen grid grid-cols-1 
+    overflow-hidden 
+    bg-darkGrey sm:py-12"
   >
     <!-- //layar -->
-
-    <div class="">
+    <div class=" flex flex-col 2xl:grid 2xl:grid-cols-8 ">
+       <!-- //Teks Berjalan -->
       <div
-        class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
-        h-16 bg-black0  ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="2xl:col-span-7 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
+         bg-black0  ring-darkGrey mx-0 sm:mx-8 rounded-md h-16"
       >
-      <div class="relative text-2xl text-blueMarine flex overflow-x-hidden">
-        <div class=" animate-marquee py-4 whitespace-nowrap">
-          <span class="mx-4">Looking for new and interesting opportunities.</span>
-          <span class="mx-4">Text Me!</span>
-        </div>
+        <div class="relative text-2xl text-blueMarine flex overflow-x-hidden">
+          <div class=" animate-marquee py-4 whitespace-nowrap">
+            <span class="mx-4">Looking for new and interesting opportunities.</span>
+            <span class="mx-4">Text Me!</span>
+          </div>
 
-        <div class="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
-          <span class="mx-4">Looking for new and interesting opportunities.</span>
-          <span class="mx-4">Text Me!</span>
+          <div class="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
+            <span class="mx-4">Looking for new and interesting opportunities.</span>
+            <span class="mx-4">Text Me!</span>
+          </div>
         </div>
       </div>
-      </div>
+       <!-- //layar -->
       <div
-        class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
-        relative flex overflow-auto h-full bg-black px-6 pt-10 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="2xl:col-span-7 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
+        relative flex overflow-auto grow  h-full bg-black px-6 2xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
           
           <div class="">
             <div
-              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-7xl  px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] 
+                    font-cursive text-blueMarine relative text-center sm:text-7xl  
+                    px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
             >
             {{ displayText.join("") }}
             </div>
 
             <div class="">
               <div
-                class="grow mt-4 font-poppins text-white relative text-left leading-relaxed text-4xl  px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+                class="grow mt-4 font-poppins text-white absolute text-left leading-relaxed text-4xl  px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
               >
                 <div class="mb-4">
                   <span>
@@ -81,39 +86,22 @@
           </div>
         </div>
       </div>
-      <!-- <div class="fixed top-12 left-0 right-0 max-h-full">
-        <div v-for="n in 85" :key="n">
-          <div
-            class="opacity-10 bg-neonGreen mt-1 pt-1 shadow-xl sm:mx-8 sm:max-w-full sm:rounded-lg sm:px-10"
-          ></div>
-        </div>
-      </div> -->
-    </div>
-
-    <!-- <div>
-      <button @click="playMusic">Play Music</button>
-      <audio ref="bgMusic" loop>
-        <source src="./assets/backsound.mp3" type="audio/mpeg" />
-      </audio>
-    </div> -->
-
-    <!-- button -->
-    <div class="flex justify-center mt-16">
+      <div class="flex md:flex-none justify-center h-fit">
       <div
-       class="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-8 justify-center mx-4 lg:text-4xl sm:mt-8 text-xl sm:text-2xl sm:mx-8"
+       class="2xl:col-span-1 m-4 grid grid-cols-4 2xl:grid-cols-1  sm:gap-4 justify-items-center lg:gap-8 justify-center lg:text-4xl sm:mt-8 text-xl sm:text-2xl sm:mx-8"
       >
         <!-- ME BUTTON -->
         <button 
-        class="
-                
-              hover:text-grey5 font-semibold	text-3xl text-grey20 grid justify-items-center font-poppins" @click="() => me()">
+        class=" 
+              hover:text-grey5 font-semibold sm:text-3xl text-grey20 flex-col sm:grid justify-items-center font-poppins" @click="() => me()">
           <!-- text -->
           <div
             @click="play"
             v-if="isMeActive === false"
-            class="flex my-8
+            class="flex mt-0 mb-4 sm:mb-8
              text-grey20 rounded-3xl bg-darkGrey p-6
-                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  w-20 h-20
                   border-4 border-grey50 
                   drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
                  hover:text-grey5 hover:bg-grey70"
@@ -151,7 +139,7 @@
           <div
             @click="play"
             v-if="isMeActive === true"
-            class="flex my-8 
+            class="flex mt-0 mb-4 sm:mb-8
                   text-blueMarine rounded-3xl bg-darkGrey p-6
                   w-28 h-28
                   border-4 border-grey50 
@@ -190,17 +178,18 @@
           <div :class="isMeActive?'text-blueMarine drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]':text-blueMarine">Me</div>
 
         </button>
-        
  <!-- ME BUTTON -->
         <button 
-         class="hover:text-grey5 font-semibold	text-3xl text-grey20 grid justify-items-center font-poppins" @click="() => myWork()">
+         class="
+         hover:text-grey5 font-semibold sm:text-3xl text-grey20 flex-col sm:grid justify-items-center font-poppins" @click="() => myWork()">
           <!-- text -->
           <div
             @click="play"
             v-if="isMyWorkActive === false"
-            class="flex my-8
+            class="flex mt-0 mb-4 sm:mb-8
              text-grey20 rounded-3xl bg-darkGrey p-6
-                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  w-20 h-20
                   border-4 border-grey50 
                   drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
                  hover:text-grey5 hover:bg-grey70"
@@ -239,9 +228,10 @@
           <div
             @click="play"
             v-if="isMyWorkActive === true"
-            class="flex my-8 
+            class="flex mt-0 mb-4 sm:mb-8
                   text-blueMarine rounded-3xl bg-darkGrey p-6
-                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  w-20 h-20
                   border-4 border-grey50 
                   shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)] 
                 "
@@ -280,14 +270,16 @@
 
         </button>
         <button 
-         class="hover:text-grey5 font-semibold	text-3xl text-grey20 grid justify-items-center font-poppins" @click="() => myContact()">
+         class="
+         hover:text-grey5 font-semibold sm:text-3xl text-grey20 flex-col sm:grid justify-items-center font-poppins" @click="() => myContact()">
           <!-- text -->
           <div
             @click="play"
             v-if="isMyContactActive === false"
-            class="flex my-8
+            class="flex mt-0 mb-4 sm:mb-8
              text-grey20 rounded-3xl bg-darkGrey p-6
-                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  w-20 h-20
                   border-4 border-grey50 
                   drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
                  hover:text-grey5 hover:bg-grey70"
@@ -325,9 +317,10 @@
           <div
             @click="play"
             v-if="isMyContactActive === true"
-            class="flex my-8 
+            class="flex mt-0 mb-4 sm:mb-8 
                   text-blueMarine rounded-3xl bg-darkGrey p-6
-                  w-24 h-24
+                  sm:w-24 sm:h-24
+                  w-20 h-20
                   border-4 border-grey50 
                   shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)] 
                   
@@ -365,21 +358,21 @@
           <div :class="isMyContactActive?'text-blueMarine drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]':text-blueMarine">Contact</div>
 
         </button>
-        <div class="w-full grid justify-items-center">
           
-          <div class=" rounded-full w-40 grid justify-items-center drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] ">
+          <div class="px-1 sm:px-2 rounded-full grid justify-items-center sm:drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] ">
         <a href="/files/cv_Masegie_Sep2023.pdf" download>    
             <button 
-                class="p-4 hover:text-redCVHover font-semibold	text-3xl text-redCV grid justify-items-center font-poppins
+                class=" hover:text-redCVHoverfont-semibold sm:text-3xl text-redCV flex-col sm:grid justify-items-center font-poppins
                 active:text-grey20" 
                 >
 
                   <!-- text -->
                   <div
                     @click="play"
-                    class="flex mt-4 mb-8
+                    class="flex mt-0 mb-4 sm:mb-8
                     redCVHover rounded-full bg-darkGrey p-6
-                          w-24 h-24
+                    sm:w-24 sm:h-24
+                  w-20 h-20
                           border-4 border-grey50 
                           drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
                         hover:text-redCVHover hover:bg-grey70
@@ -417,11 +410,10 @@
                       </defs>
                     </svg>
                   </div>
-                  <div >CV</div>
+                  <div class="mb-4">CV</div>
                 
                 </button>
               </a>
-          </div>
         </div>
        
         
@@ -429,6 +421,17 @@
       </div>
      
     </div>
+    </div>
+
+    <!-- <div>
+      <button @click="playMusic">Play Music</button>
+      <audio ref="bgMusic" loop>
+        <source src="./assets/backsound.mp3" type="audio/mpeg" />
+      </audio>
+    </div> -->
+
+    <!-- button -->
+    
   </div>
 </template>
 
