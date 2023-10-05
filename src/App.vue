@@ -1011,11 +1011,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .no-pull-to-refresh {
   overscroll-behavior: none;
   touch-action: none;
 }
+
 html {
   overflow: hidden;
   overscroll-behavior: none;
