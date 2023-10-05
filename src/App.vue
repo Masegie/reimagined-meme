@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
+    class="no-pull-to-refresh relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
   >
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
@@ -1012,8 +1012,8 @@ export default {
 </script>
 
 <style>
-/* Add this custom CSS to disable pull-to-refresh */
-template {
+.no-pull-to-refresh {
+  overscroll-behavior: none;
   touch-action: none;
 }
 </style>
