@@ -1014,7 +1014,6 @@ export default {
 <style>
 .no-pull-to-refresh {
   overscroll-behavior: none;
-  touch-action: none;
 }
 
 html {
