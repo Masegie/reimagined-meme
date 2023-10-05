@@ -1010,3 +1010,10 @@ export default {
   },
 };
 </script>
+
+<style>
+/* Add this custom CSS to disable pull-to-refresh */
+body {
+  touch-action: none;
+}
+</style>
