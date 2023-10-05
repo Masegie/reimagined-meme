@@ -943,7 +943,7 @@ export default {
       this.displayText = [""];
       this.displayText2nd = [""];
       this.content = ["My Work"];
-      this.content2nd = ["Wait, i still working on it!"];
+      this.content2nd = ["Wait, i'm still working on it!"];
 
       this.start();
       this.start2nd();
@@ -1017,7 +1017,6 @@ export default {
 }
 
 html {
-  overflow: hidden;
   overscroll-behavior: none;
 }
 </style>
