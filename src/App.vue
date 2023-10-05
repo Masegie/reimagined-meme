@@ -1013,7 +1013,7 @@ export default {
 
 <style>
 /* Add this custom CSS to disable pull-to-refresh */
-body {
+template {
   touch-action: none;
 }
 </style>
