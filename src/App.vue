@@ -26,10 +26,10 @@
       </div>
       <!-- Main Screen -->
       <div
-        class="drop-shadow-button flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] flex overflow-auto bg-black px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="drop-shadow-button flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] flex scroll-overflow overflow-scroll bg-black px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto flex">
-          <div class="">
+          <div>
             <div
               class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-4xl sm:text-5xl lg-text7xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
             >
@@ -62,7 +62,7 @@
                 <div
                   class="text-sm sm:text-2xl relative flex pt-4 items-center"
                 >
-                  <div class="flex-grow">UI/UX Designer - Seasonal</div>
+                  <div class="flex-grow">UI/UX Designer ~ Seasonal</div>
                   <div class="flex-grow text-right">2021-Present</div>
                 </div>
                 <div
@@ -87,9 +87,7 @@
                 <div
                   class="text-sm sm:text-2xl relative flex pt-8 items-center"
                 >
-                  <div class="flex-grow">
-                    Bachelor Degree of Informatics Engineering
-                  </div>
+                  <div class="flex-grow">Informatics Engineering</div>
                   <div class="flex-grow text-right">2015-2019</div>
                 </div>
               </div>
@@ -97,7 +95,6 @@
           </div>
         </div>
       </div>
-      <div></div>
     </div>
 
     <!-- Button -->
