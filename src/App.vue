@@ -812,8 +812,6 @@ import backsoundSfx from "./assets/backsound.mp3";
 import typingSfx from "./assets/typingEffect.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
-var container = document.getElementById("scrollContainer");
-container.style.WebkitOverflowScrolling = "touch";
 export default {
   setup() {
     const { play } = useSound(buttonSfx);
