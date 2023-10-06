@@ -26,7 +26,9 @@
       </div>
       <!-- Main Screen -->
       <div
-        class="drop-shadow-button flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] flex ios-scrolling overflow-auto bg-black px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        id="scrollContainer"
+        class="drop-shadow-button flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] flex overflow-auto bg-black px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        style="-webkit-overflow-scrolling: touch"
       >
         <div class="mx-auto flex">
           <div>
@@ -810,6 +812,8 @@ import backsoundSfx from "./assets/backsound.mp3";
 import typingSfx from "./assets/typingEffect.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
+var container = document.getElementById("scrollContainer");
+container.style.WebkitOverflowScrolling = "touch";
 export default {
   setup() {
     const { play } = useSound(buttonSfx);
