@@ -978,7 +978,6 @@ export default {
       }
     },
     type(word) {
-      // if typing...
       this.$refs.typingMusic.play();
       if (this.currentWord.length > 0) {
         this.displayText.push(this.currentWord.shift());
