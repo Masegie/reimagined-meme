@@ -35,13 +35,14 @@
         <div class="mx-auto ">
           <div>
             <div
-              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-4xl sm:text-5xl lg-text7xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-3xl sm:text-5xl lg-text7xl 
+              px-4 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
             >
               {{ displayText.join("") }}
             </div>
 
             <div
-              class="grow mt-4 font-poppins text-white absolute text-left leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+              class="grow font-poppins text-white absolute text-left leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
             >
               <div class="mb-4">
                 <span>
@@ -66,7 +67,7 @@
                 <div
                   class="text-sm sm:text-2xl relative flex pt-4 items-center"
                 >
-                  <div class="flex-grow">UI/UX Designer ~ Seasonal</div>
+                  <div class="flex-grow">(Seasonal) UI/UX Designer </div>
                   <div class="flex-grow text-right">2021-Present</div>
                 </div>
                 <div
