@@ -1,6 +1,6 @@
 <template>
   <div
-    class="no-pull-to-refresh relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
+    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
   >
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
@@ -26,11 +26,12 @@
       </div>
       <!-- Main Screen -->
       <div
-        id="scrollContainer"
-        class="drop-shadow-button flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] flex overflow-auto bg-black px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
-        style="-webkit-overflow-scrolling: touch"
+        class="drop-shadow-button flex-1 
+              shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
+              relative flex overflow-auto  bg-black 
+              px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
-        <div class="mx-auto flex">
+        <div class="mx-auto ">
           <div>
             <div
               class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-4xl sm:text-5xl lg-text7xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
