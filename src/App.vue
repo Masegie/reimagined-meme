@@ -43,7 +43,7 @@
             </div>
 
             <div
-              class="grow mt-4 font-poppins text-white text-center leading-relaxed text-xl 
+              class="grow mt-4 font-poppins text-white text-center absolute leading-relaxed text-xl 
                       sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <div class="mb-4">
