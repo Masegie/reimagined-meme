@@ -31,16 +31,20 @@
               relative flex overflow-auto  bg-black 
               px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
-        <div class="mx-auto ">
+        <div class="mx-auto">
           <div>
             <div
-              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine relative text-center text-4xl sm:text-5xl lg-text7xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] 
+                    font-cursive text-blueMarine relative text-center text-4xl 
+                    sm:text-5xl sm:px-10
+                    lg-text7xl px-6 pt-10 pb-8 shadow-sm rounded-lg "
             >
               {{ displayText.join("") }}
             </div>
 
             <div
-              class="grow mt-4 font-poppins text-white absolute text-left leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm sm:mx-auto rounded-lg sm:px-10"
+              class="grow mt-4 font-poppins text-white text-center leading-relaxed text-xl 
+                      sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <div class="mb-4">
                 <span>
@@ -48,8 +52,8 @@
                 </span>
               </div>
               <br />
-              <div v-if="isMeActive === true">
-                <div class="relative flex py-5 items-center">
+              <div v-if="isMeActive === true" class="text-left">
+                <div class="relative flex py-5 items-center ">
                   <div class="flex-grow border-t border-blueMarine"></div>
                   <span class="flex-shrink mx-4 text-white">Experience</span>
                 </div>
@@ -92,6 +96,12 @@
                 >
                   <div class="flex-grow">Informatics Engineering</div>
                   <div class="flex-grow text-right">2015-2019</div>
+                </div>
+              </div>
+              <div v-if="isMyWorkActive === true">
+                <div class="relative flex py-5 items-center">
+                  <div class="flex-grow border-t border-blueMarine"></div>
+                  <span class="flex-shrink mx-4 text-white">Works</span>
                 </div>
               </div>
             </div>

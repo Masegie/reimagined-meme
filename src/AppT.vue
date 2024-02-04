@@ -32,6 +32,7 @@
               bg-black 
               px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
+      
         <div class="mx-auto ">
           <div>
             <div
