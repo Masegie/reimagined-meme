@@ -26,39 +26,32 @@
       </div>
       <!-- Main Screen -->
       <div
-        class="flex-1 
-              shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] 
-              relative flex overflow-auto  bg-black 
-              px-6 xl:pt-28 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
           <div>
             <div
-              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] 
-                    font-cursive text-blueMarine relative text-center text-4xl 
-                    sm:text-5xl sm:px-10
-                    lg-text7xl px-6 pt-10 pb-8 shadow-sm rounded-lg "
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine text-center text-4xl sm:text-5xl sm:px-10 lg-text7xl px-6 pt-10 shadow-sm rounded-lg"
             >
               {{ displayText.join("") }}
             </div>
 
             <div
-              class="grow mt-4 font-poppins text-white text-center absolute leading-relaxed text-xl 
-                      sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow mt-4 font-poppins text-white text-center absolute lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
             >
-              <div class="mb-4">
+              <div v-if="isMyWorkActive === false" class="mb-4">
                 <span>
                   {{ displayText2nd.join("") }}
                 </span>
               </div>
               <br />
               <div v-if="isMeActive === true" class="text-left">
-                <div class="relative flex py-5 items-center ">
+                <div class="relative flex py-5 items-center">
                   <div class="flex-grow border-t border-blueMarine"></div>
                   <span class="flex-shrink mx-4 text-white">Experience</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
-                  Indomaret
+                  Indomaret Group
                 </div>
                 <div
                   class="text-sm sm:text-2xl relative flex pt-8 items-center"
@@ -69,7 +62,7 @@
                 <div
                   class="text-sm sm:text-2xl relative flex pt-4 items-center"
                 >
-                  <div class="flex-grow">UI/UX Designer ~ Seasonal</div>
+                  <div class="flex-grow">[Seasonal] UI/UX Designer</div>
                   <div class="flex-grow text-right">2021-Present</div>
                 </div>
                 <div
@@ -99,9 +92,106 @@
                 </div>
               </div>
               <div v-if="isMyWorkActive === true">
-                <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-blueMarine"></div>
-                  <span class="flex-shrink mx-4 text-white">Works</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <!-- 1 -->
+                  <div
+                    @click="handleClickLentera"
+                    class="p-4 cursor-pointer border border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
+                  >
+                    <div
+                      class="text-blueMarine text-left flex justify-between text-xs font-cursive py-2"
+                    >
+                      <div>MOBILE APP . UI DESIGNER</div>
+                      <div>2022</div>
+                    </div>
+                    <div class="text-left">
+                      <div text-md>Lentera Books APP</div>
+                      <div class="text-lg text-grey20">
+                        Journey to design the “LENTERA” book app MVP
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8 mt-4">
+                      <div class="lg:col-span-2 col-span-3 grid grid-cols-1">
+                        <img src="/images/Lentera_Thumbnail.png" class="" />
+                      </div>
+                      <div
+                        class="lg:col-span-1 col-span-3 grid grid-cols-1 content-end"
+                      >
+                        <div class="lg:justify-end">
+                          <div
+                            class="flex text-sm justify-center border border-grey70 p-4 rounded-lg"
+                          >
+                            Read Story
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-4 h-4 ml-2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div
+                    @click="handleClickLentera"
+                    class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-black"
+                  >
+                    <div
+                      class="text-blueMarine text-left flex justify-between text-xs font-cursive py-2"
+                    >
+                      <div>WEB APP . UI DESIGNER</div>
+                      <div>2022</div>
+                    </div>
+                    <div class="text-left">
+                      <div text-md>CDC</div>
+                      <div class="text-lg text-grey20">
+                        Journey to design the “LENTERA” book app MVP
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8 mt-4 h-max justify-end">
+                      <div class="lg:col-span-2 col-span-3 grid grid-cols-1">
+                        <img src="/images/Lentera_Thumbnail.png" class="" />
+                      </div>
+                      <div
+                        class="lg:col-span-1 col-span-3 grid grid-cols-1 content-end"
+                      >
+                        <div
+                          class="text-xs text-grey20 text-left lg:justify-end"
+                        >
+                          I'm sorry this project is confidential
+                          <div
+                            class="mt-2 flex text-sm text-white justify-center border border-grey70 hover:border-blueMarine p-4 rounded-lg"
+                          >
+                            Email Me
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-4 h-4 ml-2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -881,6 +971,9 @@ export default {
   methods: {
     playMusic() {
       this.$refs.bgMusic.play();
+    },
+    handleClickLentera() {
+      console.log("lentera");
     },
     downloadFile() {
       // Assuming 'file' is the locally stored file path
