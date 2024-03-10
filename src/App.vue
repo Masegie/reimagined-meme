@@ -29,15 +29,14 @@
         class="flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
-          <div>
+          <div class="absolute inset-x-0">
             <div
               class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine text-center text-4xl sm:text-5xl sm:px-10 lg-text7xl px-6 pt-10 shadow-sm rounded-lg"
             >
               {{ displayText.join("") }}
             </div>
-
             <div
-              class="grow mt-4 font-poppins text-white text-center absolute lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow mt-4 font-poppins text-white text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <div v-if="isMyWorkActive === false" class="mb-4">
                 <span>
