@@ -96,7 +96,7 @@
                   <!-- 1 -->
                   <div
                     @click="handleClickLentera"
-                    class="p-4 cursor-pointer border border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
                   >
                     <div
                       class="text-blueMarine text-left flex justify-between text-xs font-cursive py-2"
@@ -106,22 +106,19 @@
                     </div>
                     <div class="text-left">
                       <div text-md>Lentera Books APP</div>
-                      <div class="text-lg text-grey20">
+                      <div class="text-sm lg:text-lg text-grey20">
                         Journey to design the “LENTERA” book app MVP
                       </div>
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
-                      <div class="lg:col-span-2 col-span-3 grid grid-cols-1">
+                      <div class="lg:col-span-2 col-span-2 grid grid-cols-1">
                         <img src="/images/Lentera_Thumbnail.png" class="" />
                       </div>
                       <div
-                        class="lg:col-span-1 col-span-3 grid grid-cols-1 content-end"
+                        class="lg:col-span-1 col-span-1 grid grid-cols-1 content-end"
                       >
                         <div class="lg:justify-end">
-                          <div
-                            class="flex text-sm justify-center border border-grey70 p-4 rounded-lg"
-                          >
-                            Read Story
+                          <div class="flex text-sm justify-end rounded-lg">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -142,6 +139,8 @@
                     </div>
                   </div>
                   <!-- 2 -->
+
+                  <!-- 3 -->
                   <div
                     @click="handleClickLentera"
                     class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-black"
