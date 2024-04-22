@@ -13,6 +13,7 @@
     "@vueuse/sound": "^2.0.1",
     "typed.js": "^2.0.132",
     "vue": "^3.2.45",
+    "vue-router": "^4.3.0",
     "vue-typed-js": "^0.1.2",
     "vue-typer": "^1.2.0"
   },
