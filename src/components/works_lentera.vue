@@ -4,69 +4,64 @@
   >
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
-      <!-- Teks Berjalan -->
-      <div>
+      <div
+        class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 ring-darkGrey mx-0 sm:mx-8 rounded-md h-16"
+      >
         <div
-          class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+          class="mx-5 py-6 sm:mx-10 relative text-xs text-blueMarine grid grid-cols-2 sm:flex justify-between p-2 gap-2"
         >
-          <div
-            class="mx-5 py-4 sm:mx-10 relative text-xs font-thin text-blueMarine grid grid-cols-1 sm:flex justify-between p-2 gap-2"
-          >
-            <div class="col-span-1 flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 mr-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                />
-              </svg>
-              UI Designer
-            </div>
-            <div class="col-span-1 flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 mr-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                />
-              </svg>
-              Mar 2022 - Apr 2022
-            </div>
-            <div class="col-span-1 flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 mr-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
-                />
-              </svg>
-              Minimum Viable Product
-            </div>
+          <div class="col-span-1 flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 mr-2"
+              @click="handleClickHome"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            UI Designer
+          </div>
+          <div class="col-span-1 flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+              />
+            </svg>
+            Mar 2022 - Apr 2022
           </div>
         </div>
       </div>
-
       <!-- Main Screen -->
 
       <div
@@ -75,7 +70,7 @@
         <div class="mx-auto">
           <div class="absolute inset-x-0">
             <div
-              class="grow font-poppins text-white text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow text-white text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <br />
               <div class="text-left">
@@ -90,8 +85,53 @@
                   />
                 </div>
                 <div class="relative flex justify-center">
-                  <span class="mt-8"> New Way to Reads Book </span>
+                  <span class="mt-8"> judul -TBA-</span>
                 </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8">
+                    TL:DR cerita tentang design buku app biasa tapi tidak jadi
+                    dipake dan client kabur, briefnya membuat app baca buku
+                    biasa yang bisa mengkonekan antara penulis dan pembaca, dan
+                    setelah client kabur dan tidak jadi dipakai saya mencoba
+                    mengeksplorasi app ini lebih lanjut.
+                  </span>
+                </div>
+
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> The Brief </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    kebanyakan diantara aplikasi baca buku online cara bacanya
+                    masih kurang nyaman, maka dari itu di sini client meminta
+                    untuk mendesign buku yang memiliki feel seperti membaca buku
+                    asli, dan ada penulis dan pembaca bisa berinteraksi, dan
+                    siapa saja bisa menjadi penulis.
+                  </span>
+                </div>
+
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> Chalenge </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2"> how we build this </span>
+                </div>
+
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> Research and Findings </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2"> how we build this </span>
+                </div>
+
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> Design Exploration </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2"> how we build this </span>
+                </div>
+
+                <br />
               </div>
             </div>
           </div>
@@ -103,7 +143,6 @@
   <!-- <div>
       <button @click="playMusic">Play Music</button>
       <audio ref="bgMusic" loop>
-      
         <source src="./assets/backsound.mp3" type="audio/mpeg" />
       </audio>
     </div> -->
@@ -118,6 +157,7 @@ import backsoundSfx from "../assets/backsound.mp3";
 import typingSfx from "../assets/typingEffect.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
+import router from "../router";
 export default {
   setup() {
     const { play } = useSound(buttonSfx);
@@ -179,9 +219,10 @@ export default {
     playMusic() {
       this.$refs.bgMusic.play();
     },
-    handleClickLentera() {
+    handleClickHome() {
+      this.play;
+      router.push("/");
       this.firstPorto = true;
-      console.log("lentera");
     },
     downloadFile() {
       // Assuming 'file' is the locally stored file path
