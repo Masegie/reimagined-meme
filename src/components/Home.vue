@@ -968,7 +968,7 @@ export default {
       currentWord2nd: "",
       wordIdx2nd: 0,
 
-      file: "./assets/buttonEffect3.mp3",
+      //      file: "../assets/buttonEffect3.mp3",
     };
   },
   methods: {
