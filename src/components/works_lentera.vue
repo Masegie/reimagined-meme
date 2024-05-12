@@ -11,7 +11,7 @@
           class="mx-5 py-6 sm:mx-10 relative text-xs text-blueMarine grid grid-cols-2 sm:flex justify-between p-2 gap-2"
         >
           <div class="col-span-1 flex">
-            <svg
+            <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -25,8 +25,7 @@
                 stroke-linejoin="round"
                 d="M15.75 19.5 8.25 12l7.5-7.5"
               />
-            </svg>
-
+            </svg> -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -70,11 +69,11 @@
         <div class="mx-auto">
           <div class="absolute inset-x-0">
             <div
-              class="grow text-white text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow text-white text-left lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <br />
-              <div class="text-left">
-                <div class="relative flex justify-center">
+              <div class="text-left md:px-48">
+                <div class="relative flex justify-center hidden">
                   <img
                     class="object-contain h-64 w-128"
                     src="/images/Home_Page.png"
@@ -84,20 +83,20 @@
                     src="/images/Read_Book_Screen.png"
                   />
                 </div>
-                <div class="relative flex justify-center">
-                  <span class="mt-8"> judul -TBA-</span>
+                <div class="relative flex justify-left text-5xl">
+                  <span class="mt-8">A moon in your book</span>
                 </div>
-                <div class="relative flex justify-left text-sm">
-                  <span class="mt-8">
-                    TL:DR cerita tentang design buku app biasa tapi tidak jadi
-                    dipake dan client kabur, briefnya membuat app baca buku
-                    biasa yang bisa mengkonekan antara penulis dan pembaca, dan
-                    setelah client kabur dan tidak jadi dipakai saya mencoba
-                    mengeksplorasi app ini lebih lanjut.
+                <div class="relative flex justify-left text-lg">
+                  <span class="mt-24">
+                    TL;DR: The story is about a usual book app design that ended
+                    up not being used because the client disappeared . The brief
+                    was to create a regular book reading app that could connect
+                    authors and readers. After the client disappeared and the
+                    project was abandoned, I tried to explore this app further.
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-lg">
                   <span class="mt-8"> The Brief </span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
