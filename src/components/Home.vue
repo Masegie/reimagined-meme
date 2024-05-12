@@ -217,7 +217,7 @@
             class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey lg:p-5 p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -307,7 +307,7 @@
             class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey lg:p-5 p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -412,7 +412,7 @@
             class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -505,7 +505,7 @@
             class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -613,7 +613,7 @@
             class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -701,7 +701,7 @@
             class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
 
             <svg
@@ -806,7 +806,7 @@
                 class="flex mt-0 mb-4 redCVHover rounded-full bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button active:drop-shadow-sm shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-redCVHover hover:bg-grey70 transition transform duration-150 active:shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)] active:text-grey50"
               >
                 <audio ref="typingMusic" loop>
-                  <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+                  <source src="../assets/typingEffect.mp3" type="audio/mpeg" />
                 </audio>
 
                 <svg
