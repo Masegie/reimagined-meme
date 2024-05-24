@@ -91,6 +91,11 @@
                   <div class="flex-grow">Informatics Engineering</div>
                   <div class="flex-grow text-right">2015-2019</div>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
               <div v-if="isMyWorkActive === true">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -193,6 +198,11 @@
                     </div>
                   </div>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -202,7 +212,7 @@
 
     <!-- Button -->
     <div
-      class="static bottom-0 left-0 flex bg-darkGrey px-4 lg:basis-2/12 justify-center"
+      class="fixed w-full sm:static bottom-0 left-0 flex bg-darkGrey px-4 lg:basis-2/12 justify-center"
     >
       <div
         class="p-4 lg:flex-col flex lg:gap-4 justify-items-center lg:items-center justify-center lg:text-xl sm:mt-4 text-sm sm:text-lg"
