@@ -201,7 +201,9 @@
     </div>
 
     <!-- Button -->
-    <div class="flex lg:basis-2/12 justify-center">
+    <div
+      class="pointer-events-none bottom-0 left-0 flex lg:basis-2/12 justify-center"
+    >
       <div
         class="p-4 lg:flex-col flex lg:gap-4 justify-items-center lg:items-center justify-center lg:text-xl sm:mt-4 text-sm sm:text-lg"
       >
