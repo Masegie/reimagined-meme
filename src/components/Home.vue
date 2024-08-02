@@ -5,30 +5,32 @@
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
       <!-- Teks Berjalan -->
-
       <div
-        class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 ring-darkGrey mx-0 sm:mx-8 rounded-md h-16"
+        class="z-40 sm:mb-4 drop-shadow-button text-grey20 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 mx-0 sm:mx-8 rounded-md h-16"
       >
-        <div class="relative text-2xl text-blueMarine flex overflow-x-hidden">
-          <div class="animate-marquee py-4 whitespace-nowrap">
-            <span class="mx-4"
-              >Looking for new and interesting opportunities.</span
-            >
-            <span class="mx-4">Text Me!</span>
-          </div>
+        <div :class="backgroundClass">
+          <div class="relative text-2xl flex overflow-x-hidden">
+            <div class="py-4 animate-marquee sm:animate-none whitespace-nowrap">
+              <span class="mx-4"
+                >Looking for new and interesting opportunities, Text Me!</span
+              >
+            </div>
 
-          <div class="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
-            <span class="mx-4"
-              >Looking for new and interesting opportunities.</span
+            <div
+              class="absolute top-0 py-4 animate-marquee2 sm:animate-none whitespace-nowrap"
             >
-            <span class="mx-4">Text Me!</span>
+              <span class="mx-4"
+                >Looking for new and interesting opportunities, Text Me!</span
+              >
+            </div>
           </div>
         </div>
       </div>
+
       <!-- Main Screen -->
 
       <div
-        class="flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="ring-inset ring-2 ring-grey20 flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
           <div class="absolute inset-x-0">
@@ -49,7 +51,7 @@
               <div v-if="isMeActive === true" class="text-left">
                 <div class="relative flex py-5 items-center">
                   <div class="flex-grow border-t border-blueMarine"></div>
-                  <span class="flex-shrink mx-4 text-white">Experience</span>
+                  <span class="flex-shrink mx-4 text-white">Experiences</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
                   Indomaret Group
@@ -80,7 +82,7 @@
                 </div>
                 <div class="relative flex py-5 items-center">
                   <div class="flex-grow border-t border-blueMarine"></div>
-                  <span class="flex-shrink mx-4 text-white">Education</span>
+                  <span class="flex-shrink mx-4 text-white">Educations</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
                   Universitas Atma Jaya Yogyakarta
@@ -924,8 +926,6 @@
 <script>
 import { useSound } from "@vueuse/sound";
 import buttonSfx from "../assets/buttonEffect3.mp3";
-import backsoundSfx from "../assets/backsound.mp3";
-import typingSfx from "./src/assets/typingEffect.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
 import router from "../router";
@@ -962,6 +962,7 @@ export default {
   },
   mounted() {
     this.start();
+    this.changeBackground();
   },
 
   data() {
@@ -983,10 +984,36 @@ export default {
       currentWord2nd: "",
       wordIdx2nd: 0,
 
+      backgroundClass: "",
+
       //      file: "../assets/buttonEffect3.mp3",
     };
   },
   methods: {
+    changeBackground() {
+      let cycleCount = 0;
+      const interval = setInterval(() => {
+        console.log(cycleCount);
+        if (cycleCount < 2) {
+          this.backgroundClass =
+            " z-20 rounded-md text-shadow-glowPink ring-inset ring-2 ring-grey20 text-white"; // Tailwind class for red background
+          setTimeout(() => {
+            this.backgroundClass = ""; // Remove class after 1 second
+          }, 100);
+          cycleCount++;
+        } else {
+          clearInterval(interval);
+          this.backgroundClass =
+            " z-20 rounded-md text-shadow-glowPink ring-inset ring-2 ring-grey20 text-white"; // Tailwind class for red background
+          setTimeout(() => {
+            this.backgroundClass = ""; // Remove class after 7 seconds
+            setTimeout(() => {
+              this.changeBackground(); // Restart the cycle after the entire sequence
+            }, 1000 * 10 - 9000);
+          }, 7000);
+        }
+      }, 500); // 2 seconds interval
+    },
     playMusic() {
       this.$refs.bgMusic.play();
     },
