@@ -115,7 +115,6 @@
 import { useSound } from "@vueuse/sound";
 import buttonSfx from "../assets/buttonEffect3.mp3";
 import backsoundSfx from "../assets/backsound.mp3";
-import typingSfx from "../assets/typingEffect.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
 export default {

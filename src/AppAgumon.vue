@@ -82,7 +82,7 @@
             class="relative text-yellow2 bg-yellow1 py-2 sm:py-8 px-5 sm:px-10 border-4 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div class="">Me</div>
           </div>
@@ -92,7 +92,7 @@
             class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div class="">Me</div>
           </div>
@@ -121,7 +121,7 @@
             class="relative text-yellow2 bg-yellow1 border-4 py-2 sm:py-8 px-5 sm:px-10 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div>Work</div>
           </div>
@@ -131,7 +131,7 @@
             class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div class="">Work</div>
           </div>
@@ -163,7 +163,7 @@
             class="relative text-yellow2 bg-yellow1 border-4 py-2 sm:py-8 px-5 sm:px-10 border-yellow3 rounded-sm transition transform duration-200 active:translate-y-3 hover:text-white active:bg-yellow2"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div>Contact</div>
           </div>
@@ -173,7 +173,7 @@
             class="relative text-white bg-yellow2 py-2 sm:py-8 px-5 sm:px-10 border-4 translate-y-4 border-yellow3 rounded-sm transition transform duration-350 active:translate-y-2 active:bg-yellow1"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div class="">Contact</div>
           </div>
@@ -198,7 +198,7 @@
             class="relative text-manggo3 bg-manggo border-4 border-manggo3 rounded-full transition transform duration-200 active:translate-y-3 hover:text-white active:bg-manggo3"
           >
             <audio ref="typingMusic" loop>
-              <source src="./assets/typingEffect.mp3" type="audio/mpeg" />
+              <source src="@/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio>
             <div class="py-4 px-6 sm:py-8 sm:px-10">CV</div>
           </div>
@@ -212,7 +212,7 @@
 import { useSound } from "@vueuse/sound";
 import buttonSfx from "./assets/buttonEffect3.mp3";
 import backsoundSfx from "./assets/backsound.mp3";
-import typingSfx from "./assets/typingEffect.mp3";
+import typingSfx from "@/assets/typingEffect.mp3";
 export default {
   setup() {
     const { play } = useSound(buttonSfx);
