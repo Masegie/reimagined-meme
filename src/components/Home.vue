@@ -9,19 +9,19 @@
         class="z-40 sm:mb-4 drop-shadow-button text-grey20 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 mx-0 sm:mx-8 rounded-md h-16"
       >
         <div :class="backgroundClass">
-          <div class="relative text-2xl flex overflow-x-hidden">
-            <div class="py-4 animate-marquee sm:animate-none whitespace-nowrap">
-              <span class="mx-4"
-                >Looking for new and interesting opportunities, Text Me!</span
-              >
+          <div
+            class="relative text-2xl flex items-center justify-center overflow-x-hidden"
+          >
+            <div
+              class="py-4 animate-marquee sm:animate-none items-center whitespace-nowrap"
+            >
+              <span class="mx-4">Seeking cool opportunities, Text Me!</span>
             </div>
 
             <div
               class="absolute top-0 py-4 animate-marquee2 sm:animate-none whitespace-nowrap"
             >
-              <span class="mx-4"
-                >Looking for new and interesting opportunities, Text Me!</span
-              >
+              <span class="mx-4">Seeking cool opportunities, Text Me!</span>
             </div>
           </div>
         </div>
@@ -107,20 +107,27 @@
                     class="p-4 cursor-pointer border border-grey20 hover:border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
                   >
                     <div
-                      class="text-blueMarine text-left flex justify-between text-xs font-cursive py-2"
+                      class="text-left text-grey10 flex justify-between text-xs py-2"
                     >
                       <div>MOBILE APP . UI DESIGNER</div>
                       <div>2022</div>
                     </div>
-                    <div class="text-left">
-                      <div text-md>Lentera Books APP</div>
-                      <div class="text-sm lg:text-lg text-grey20">
-                        Journey to design the “LENTERA” book app MVP
+                    <div class="text-grey10 text-left">
+                      <div class="text-2xl lg:text-2xl text-white">
+                        After my client disappeared after approving my design on
+                        my first project.
                       </div>
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
-                      <div class="lg:col-span-2 col-span-2 grid grid-cols-1">
-                        <img src="/images/Lentera_Thumbnail.png" class="" />
+                      <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
+                        <img src="/images/moon.png" class="" />
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-8 mt-4">
+                      <div
+                        class="text-xl text-grey10 text-left lg:col-span-4 col-span-4 grid grid-cols-1"
+                      >
+                        A Moon In Your Book
                       </div>
                       <div
                         class="lg:col-span-1 col-span-1 grid grid-cols-1 content-end"
@@ -147,7 +154,57 @@
                     </div>
                   </div>
                   <!-- 2 -->
-
+                  <div
+                    @click="handleClickLentera"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
+                  >
+                    <div
+                      class="text-left text-grey10 flex justify-between text-xs py-2"
+                    >
+                      <div>WEB APP . UI/UX DESIGNER</div>
+                      <div>2024</div>
+                    </div>
+                    <div class="text-grey10 text-left">
+                      <div class="text-2xl lg:text-2xl text-white">
+                        Our users are frustrated with the slow loading times,
+                        but we're stuck with outdated tech.
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8 mt-4">
+                      <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
+                        <img src="/images/loading.png" class="" />
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-8 mt-4">
+                      <div
+                        class="text-xl text-grey10 text-left lg:col-span-4 col-span-4 grid grid-cols-1"
+                      >
+                        Dad jokes loading
+                      </div>
+                      <div
+                        class="lg:col-span-1 col-span-1 grid grid-cols-1 content-end"
+                      >
+                        <div class="lg:justify-end">
+                          <div class="flex text-sm justify-end rounded-lg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-4 h-4 ml-2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <!-- 3 -->
                   <div
                     @click="handleClickLentera"
@@ -626,9 +683,9 @@
             v-if="isMyContactActive === false"
             class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
-            <!-- <audio ref="typingMusic" loop>
+            <audio ref="typingMusic" loop>
               <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
-            </audio> -->
+            </audio>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
