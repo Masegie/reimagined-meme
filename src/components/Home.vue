@@ -172,7 +172,7 @@
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
                       <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
-                        <img src="/images/loading.png" class="" />
+                        <img src="/images/loadingAnimation.gif.png" class="" />
                       </div>
                     </div>
                     <div class="grid grid-cols-5 gap-8 mt-4">
