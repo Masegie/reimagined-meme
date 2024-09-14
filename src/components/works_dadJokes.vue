@@ -113,7 +113,7 @@
                   </span>
                 </div>
                 <div class="relative flex justify-left text-sm lg:text-2xl">
-                  <span class="mt-8"> Obstacle </span>
+                  <span class="mt-8"> Obstacles </span>
                 </div>
                 <div
                   class="relative flex justify-left text-sm font-thin lg:text-lg"
