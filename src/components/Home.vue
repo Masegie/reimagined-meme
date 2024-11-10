@@ -652,7 +652,7 @@
           <div
             @click="play"
             v-if="isMyWorkActive === true"
-            class="-m-1 text-darkGrey rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+            class="-mx-1 lg:-my-1 text-darkGrey rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
           >
             <!-- <audio ref="typingMusic" loop>
               <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
