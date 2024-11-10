@@ -57,7 +57,7 @@
                 d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
               />
             </svg>
-            Mar 2022 - Apr 2022
+            Apr 2022
           </div>
         </div>
       </div>
@@ -83,29 +83,47 @@
                     src="/images/Read_Book_Screen.png"
                   />
                 </div>
-                <div class="relative flex justify-left text-5xl">
-                  <span class="mt-8">A moon in your book</span>
+                <div
+                  class="relative font-poppins font-bold flex justify-left text-4xl"
+                >
+                  <span class="mt-8">Bring the lantern to Lentera</span>
                 </div>
-                <div class="relative flex justify-left text-lg">
-                  <span class="mt-24">
-                    TL;DR: The story is about a usual book app design that ended
-                    up not being used because the client disappeared . The brief
-                    was to create a regular book reading app that could connect
-                    authors and readers. After the client disappeared and the
-                    project was abandoned, I tried to explore this app further.
+                <div class="relative flex justify-left text-3xl">
+                  <span class="mt-12">Product and platform</span>
+                </div>
+                <div class="relative flex justify-left text-xl">
+                  <span class="mt-8"
+                    >Lentera is an online book application, which at the time I
+                    designed for the MVP, read the journey here.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-3xl">
+                  <span class="mt-12">Result</span>
+                </div>
+                <div class="relative flex justify-left text-xl">
+                  <span class="mt-8"
+                    >Trying out the solution will help us see if using
+                    highlights makes it easier for users who need extra focus.
+                    We might also learn about what users like to customize and
+                    spot any problems with slower devices.
                   </span>
                 </div>
 
                 <div class="relative flex justify-left text-lg">
-                  <span class="mt-8"> The Brief </span>
+                  <span class="mt-8"> The Problem </span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
                   <span class="mt-2">
                     kebanyakan diantara aplikasi baca buku online cara bacanya
-                    masih kurang nyaman, maka dari itu di sini client meminta
-                    untuk mendesign buku yang memiliki feel seperti membaca buku
-                    asli, dan ada penulis dan pembaca bisa berinteraksi, dan
-                    siapa saja bisa menjadi penulis.
+                    masih kurang nyaman karena 1. readers cant stay on track,
+                    reducing the chance of losing their place in long text. 2.
+                    Dengan menyajikan area fokus yang jelas, pembaca tidak perlu
+                    terus-menerus mencari posisi mereka dalam teks, yang bisa
+                    membantu mengurangi kelelahan mata. 3. Highlight yang
+                    berfokus pada kalimat aktif dapat membantu pembaca pemula
+                    atau lansia yang mungkin mengalami kesulitan mengikuti baris
+                    demi baris dalam teks panjang. Dengan bimbingan visual ini,
+                    membaca bisa terasa lebih mudah dan teratur.
                   </span>
                 </div>
 
@@ -113,23 +131,117 @@
                   <span class="mt-8"> Chalenge </span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
-                  <span class="mt-2"> how we build this </span>
+                  <span class="mt-2">
+                    1. Creating a Non-Intrusive Focus Effect Designing a
+                    highlight that guides attention without feeling distracting
+                    is tricky. The effect needs to be subtle yet effective,
+                    enhancing focus without overwhelming users or causing visual
+                    fatigue.
+                  </span>
+                  <span class="mt-2">
+                    2. Maintaining Readability with Dynamic Changes Frequent
+                    shifts in highlight and dimming as users read can disrupt
+                    reading flow. Ensuring these changes feel smooth and
+                    natural, without abrupt transitions, is crucial for a
+                    comfortable experience.
+                  </span>
+                  <span class="mt-2">
+                    tidak semua user kita adalah pengguna baru
+                  </span>
                 </div>
 
                 <div class="relative flex justify-left text-sm">
                   <span class="mt-8"> Research and Findings </span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
-                  <span class="mt-2"> how we build this </span>
+                  <span class="mt-2">
+                    mewawancarai 3 pembaca baru yang baru atau kurang dari 3
+                    kali membaca buku secara online dalam 1 tahun terakhir dan 3
+                    pembaca buku lama yang kebalikanya dan mendapaktan hasil
+                    bahwa
+                  </span>
+                  <span class="mt-2">
+                    Pembaca buku baru memiliki masalah dalam fokus terhadap
+                    kalimat yang sedang mereka baca</span
+                  >
                 </div>
 
                 <div class="relative flex justify-left text-sm">
                   <span class="mt-8"> Design Exploration </span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
-                  <span class="mt-2"> how we build this </span>
+                  <span class="mt-2">
+                    Instead of making this just a simple online book apps named
+                    LENTERA, i want to take this opportunity to make LENTERA
+                    becomes top of comfortable and focused books app
+                  </span>
                 </div>
-
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> A light that comfort </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    one of the fun part of this project was designing a bunch of
+                    different light effect and animation to turning on and off.
+                    i took the animation inspiration from my experience when i
+                    watching film in cinema early before the movie start. i also
+                    added an finger interaction to remove the highlight.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2"> foto design </span>
+                  <span class="mt-2">
+                    image: highlight design exploration
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"> Test and Iteration</span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    Usability Tests with some book reader friend who never
+                    trying read book on app and my friend who usually reading
+                    books via app
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"
+                    >Problem: they dont know how to turn off the highlight</span
+                  >
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    with no button that shine, and cant click they dont
+                    understand how to turing the highlight off after they
+                    finish.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8"
+                    >Problem: they dont used to scrolling the
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    they are not used to reading on the same line because the
+                    page is scrolling
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8">LESSON LEARNED</span>
+                </div>
+                <div class="relative flex justify-left text-sm">
+                  <span class="mt-8">User Feedback on Focus Effectiveness</span>
+                </div>
+                <div class="relative flex justify-left text-sm font-thin">
+                  <span class="mt-2">
+                    You’d learn whether the highlight feature effectively
+                    enhances focus for most users, as well as which user groups
+                    find it most helpful Without gathering any feedback from out
+                    user, we might have ended up with just a nice-to-have idea
+                    instead of a valuable feature.
+                  </span>
+                </div>
                 <br />
               </div>
             </div>

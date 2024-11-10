@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-bone sm:pt-8 lg:py-8 sm:pb-2"
+    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
   >
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
@@ -30,17 +30,17 @@
       <!-- Main Screen -->
 
       <div
-        class="ring-2 ring-black flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-gradient-to-br from-white to-white10 px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="ring-inset ring-1 ring-black flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
           <div class="absolute inset-x-0">
             <div
-              class="drop-shadow-[0_0px_5px_rgba(255,92,0,1)] font-cursive text-orangeMarine text-center text-4xl sm:text-5xl sm:px-10 lg-text7xl px-6 pt-10 shadow-sm rounded-lg"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)] font-cursive text-blueMarine text-center text-4xl sm:text-5xl sm:px-10 lg-text7xl px-6 pt-10 shadow-sm rounded-lg"
             >
               {{ displayText.join("") }}
             </div>
             <div
-              class="grow mt-4 font-poppins text-black text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow mt-4 font-poppins text-white text-center lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pt-10 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <div v-if="isMyWorkActive === false" class="mb-4">
                 <span>
@@ -48,14 +48,10 @@
                 </span>
               </div>
               <br />
-              <div
-                v-if="isMeActive === true"
-                class="text-left"
-                data-aos="fade-right"
-              >
+              <div v-if="isMeActive === true" class="text-left">
                 <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-orangeMarine"></div>
-                  <span class="flex-shrink mx-4 text-black">Experiences</span>
+                  <div class="flex-grow border-t border-blueMarine"></div>
+                  <span class="flex-shrink mx-4 text-white">Experiences</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
                   Indomaret Group
@@ -85,8 +81,8 @@
                   <div class="flex-grow text-right">2020-2021</div>
                 </div>
                 <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-orangeMarine"></div>
-                  <span class="flex-shrink mx-4 text-black">Educations</span>
+                  <div class="flex-grow border-t border-blueMarine"></div>
+                  <span class="flex-shrink mx-4 text-white">Educations</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
                   Universitas Atma Jaya Yogyakarta
@@ -103,38 +99,12 @@
                 <br />
                 <br />
               </div>
-              <div v-if="isMyContactActive === true" class="text-left">
-                <div class="body">
-                  <div class="line">
-                    <div
-                      @mouseenter="manageMouseEnter"
-                      @mousemove="manageMouseMove"
-                      @mouseleave="manageMouseLeave"
-                      class="box"
-                    ></div>
-                    <svg>
-                      <path ref="path"></path>
-                    </svg>
-                  </div>
-                </div>
-
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-              </div>
               <div v-if="isMyWorkActive === true">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <!-- 1 -->
                   <div
                     @click="handleClickLentera"
-                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
                   >
                     <div
                       class="text-left text-grey10 flex justify-between text-xs py-2"
@@ -143,7 +113,7 @@
                       <div>2022</div>
                     </div>
                     <div class="text-grey10 text-left">
-                      <div class="text-2xl lg:text-2xl text-black">
+                      <div class="text-2xl lg:text-2xl text-white">
                         After my client disappeared after approving my design on
                         my first project.
                       </div>
@@ -186,7 +156,7 @@
                   <!-- 2 -->
                   <div
                     @click="handleClickDadJokesLoading"
-                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-blueMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(28,138,157,0.8)]"
                   >
                     <div
                       class="text-left text-grey10 flex justify-between text-xs py-2"
@@ -195,7 +165,7 @@
                       <div>2024</div>
                     </div>
                     <div class="text-grey10 text-left">
-                      <div class="text-2xl lg:text-2xl text-black">
+                      <div class="text-2xl lg:text-2xl text-white">
                         Our users are frustrated with the slow loading times,
                         but we're stuck with outdated tech.
                       </div>
@@ -239,10 +209,9 @@
                   <div
                     @click="handleClickLentera"
                     class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-black"
-                    data-aos="fade-up"
                   >
                     <div
-                      class="text-orangeMarine text-left flex justify-between text-xs font-cursive py-2"
+                      class="text-blueMarine text-left flex justify-between text-xs font-cursive py-2"
                     >
                       <div>WEB APP . UI DESIGNER</div>
                       <div>2022</div>
@@ -265,7 +234,7 @@
                         >
                           I'm sorry this project is confidential
                           <div
-                            class="mt-2 flex text-sm text-black justify-center border border-grey70 hover:border-orangeMarine p-4 rounded-lg"
+                            class="mt-2 flex text-sm text-white justify-center border border-grey70 hover:border-blueMarine p-4 rounded-lg"
                           >
                             Email Me
                             <svg
@@ -302,71 +271,53 @@
 
     <!-- Button -->
     <div
-      class="fixed w-full sm:static bottom-0 border-t-2 sm:border-t-0 left-0 flex bg-bone pr-4 lg:basis-1/12 justify-center"
+      class="fixed w-full sm:static bottom-0 left-0 flex bg-darkGrey px-4 lg:basis-2/12 justify-center"
     >
       <div
-        class="ml-8 lg:ml-4 m-4 my-8 lg:my-0 lg:flex-col flex justify-items-center w-full lg:items-center justify-start lg:text-xl text-sm sm:text-lg"
+        class="p-4 lg:flex-col flex lg:gap-4 justify-items-center lg:items-center justify-start lg:text-xl sm:mt-4 text-sm sm:text-lg"
       >
         <!-- ME BUTTON -->
         <button
-          class="text-base hover:text-grey5 text-grey20 flex-col sm:grid justify-items-center font-poppins"
+          class="mx-1 hover:text-grey5 font-semibold text-grey20 flex-col sm:grid justify-items-center font-poppins"
           @click="() => me()"
         >
           <!-- text -->
           <div
             @click="play"
             v-if="isMeActive === false"
-            class="text-darkGrey justify-items-center rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
+            class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey lg:p-5 p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-3 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
+            <audio ref="typingMusic" loop>
+              <source src="/src/assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio>
+
             <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 21 21"
+              fill="currentColor"
             >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#646464" />
+              <g filter="url(#filter0_ii_998_929)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.5 18.5C14.9183 18.5 18.5 14.9183 18.5 10.5C18.5 6.08172 14.9183 2.5 10.5 2.5C6.08172 2.5 2.5 6.08172 2.5 10.5C2.5 14.9183 6.08172 18.5 10.5 18.5ZM7.5 9.5C8.05228 9.5 8.5 9.05228 8.5 8.5C8.5 7.94772 8.05228 7.5 7.5 7.5C6.94772 7.5 6.5 7.94772 6.5 8.5C6.5 9.05228 6.94772 9.5 7.5 9.5ZM14.5 8.5C14.5 9.05228 14.0523 9.5 13.5 9.5C12.9477 9.5 12.5 9.05228 12.5 8.5C12.5 7.94772 12.9477 7.5 13.5 7.5C14.0523 7.5 14.5 7.94772 14.5 8.5ZM14.0355 14.0354C14.4261 13.6449 14.4261 13.0118 14.0355 12.6212C13.645 12.2307 13.0118 12.2307 12.6213 12.6212C11.4497 13.7928 9.55025 13.7928 8.37868 12.6212C7.98816 12.2307 7.35499 12.2307 6.96447 12.6212C6.57394 13.0118 6.57394 13.6449 6.96447 14.0354C8.91709 15.9881 12.0829 15.9881 14.0355 14.0354Z"
+                />
               </g>
               <defs>
                 <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
+                  id="filter0_ii_998_929"
+                  x="1.5"
+                  y="1.5"
+                  width="18"
+                  height="18"
                   filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
+                    in2="BackgroundImageFix"
                     result="shape"
                   />
                   <feColorMatrix
@@ -375,8 +326,8 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
+                  <feOffset dx="-1" dy="-1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -385,12 +336,12 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
                   />
                   <feBlend
                     mode="normal"
                     in2="shape"
-                    result="effect2_innerShadow_155_1058"
+                    result="effect1_innerShadow_998_929"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -398,8 +349,8 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
-                  <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -408,77 +359,56 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
                   />
                   <feBlend
                     mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
+                    in2="effect1_innerShadow_998_929"
+                    result="effect2_innerShadow_998_929"
                   />
                 </filter>
               </defs>
             </svg>
 
-            <div class="mt-3">Me</div>
+            <!-- <h1 class="[text-shadow:2px_1px_1px_rgb(0_0_0_/_40%)]">M</h1> -->
           </div>
-          <!-- aktif -->
           <div
             @click="play"
             v-if="isMeActive === true"
-            class="text-darkGrey rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+            class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey lg:p-5 p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
           >
-            <!-- <audio ref="typingMusic" loop>
+            <audio ref="typingMusic" loop>
               <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
-            </audio> -->
+            </audio>
+
             <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]"
+              viewBox="0 0 21 21"
+              fill="currentColor"
             >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#FF752E" />
+              <g filter="url(#filter0_ii_998_929)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.5 18.5C14.9183 18.5 18.5 14.9183 18.5 10.5C18.5 6.08172 14.9183 2.5 10.5 2.5C6.08172 2.5 2.5 6.08172 2.5 10.5C2.5 14.9183 6.08172 18.5 10.5 18.5ZM7.5 9.5C8.05228 9.5 8.5 9.05228 8.5 8.5C8.5 7.94772 8.05228 7.5 7.5 7.5C6.94772 7.5 6.5 7.94772 6.5 8.5C6.5 9.05228 6.94772 9.5 7.5 9.5ZM14.5 8.5C14.5 9.05228 14.0523 9.5 13.5 9.5C12.9477 9.5 12.5 9.05228 12.5 8.5C12.5 7.94772 12.9477 7.5 13.5 7.5C14.0523 7.5 14.5 7.94772 14.5 8.5ZM14.0355 14.0354C14.4261 13.6449 14.4261 13.0118 14.0355 12.6212C13.645 12.2307 13.0118 12.2307 12.6213 12.6212C11.4497 13.7928 9.55025 13.7928 8.37868 12.6212C7.98816 12.2307 7.35499 12.2307 6.96447 12.6212C6.57394 13.0118 6.57394 13.6449 6.96447 14.0354C8.91709 15.9881 12.0829 15.9881 14.0355 14.0354Z"
+                />
               </g>
               <defs>
                 <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
+                  id="filter0_ii_998_929"
+                  x="1.5"
+                  y="1.5"
+                  width="18"
+                  height="18"
                   filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 0.458824 0 0 0 0 0.180392 0 0 0 0.35 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
+                    in2="BackgroundImageFix"
                     result="shape"
                   />
                   <feColorMatrix
@@ -487,8 +417,8 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
+                  <feOffset dx="-1" dy="-1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -497,12 +427,12 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
                   />
                   <feBlend
                     mode="normal"
                     in2="shape"
-                    result="effect2_innerShadow_155_1058"
+                    result="effect1_innerShadow_998_929"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -510,8 +440,8 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
-                  <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -520,192 +450,72 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
                   />
                   <feBlend
                     mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
+                    in2="effect1_innerShadow_998_929"
+                    result="effect2_innerShadow_998_929"
                   />
                 </filter>
               </defs>
             </svg>
-
-            <div class="mt-4">Me</div>
+          </div>
+          <div
+            :class="
+              isMeActive
+                ? 'text-blueMarine drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]'
+                : text - blueMarine
+            "
+          >
+            Me
           </div>
         </button>
         <!-- Work BUTTON -->
         <button
-          class="text-base hover:text-grey5 text-grey20 flex-col sm:grid justify-items-center font-poppins"
+          class="mx-1 hover:text-grey5 font-semibold text-grey20 flex-col sm:grid justify-items-center font-poppins"
           @click="() => myWork()"
         >
           <!-- text -->
           <div
             @click="play"
             v-if="isMyWorkActive === false"
-            class="text-darkGrey -mx-1 lg:-my-1 justify-items-center rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
-          >
-            <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#646464" />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
-                    result="shape"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
-                  <feComposite
-                    in2="hardAlpha"
-                    operator="arithmetic"
-                    k2="-1"
-                    k3="1"
-                  />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="shape"
-                    result="effect2_innerShadow_155_1058"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feComposite
-                    in2="hardAlpha"
-                    operator="arithmetic"
-                    k2="-1"
-                    k3="1"
-                  />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            <div class="mt-3">Work</div>
-          </div>
-          <!-- aktif -->
-          <div
-            @click="play"
-            v-if="isMyWorkActive === true"
-            class="-m-1 text-darkGrey rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+            class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
             <!-- <audio ref="typingMusic" loop>
               <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio> -->
+
             <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 15"
+              fill="currentColor"
             >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#FF752E" />
+              <g filter="url(#filter0_ii_998_799)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 2.5C0 1.39543 0.895431 0.5 2 0.5H10C11.1046 0.5 12 1.39543 12 2.5V12.5C12 13.6046 12.8954 14.5 14 14.5H2C0.895431 14.5 0 13.6046 0 12.5V2.5ZM3 3.5H9V7.5H3V3.5ZM9 9.5H3V11.5H9V9.5Z"
+                />
+                <path
+                  d="M13 4.5H14C15.1046 4.5 16 5.39543 16 6.5V12C16 12.8284 15.3284 13.5 14.5 13.5C13.6716 13.5 13 12.8284 13 12V4.5Z"
+                />
               </g>
               <defs>
                 <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
+                  id="filter0_ii_998_799"
+                  x="-1"
+                  y="-0.5"
+                  width="18"
+                  height="16"
                   filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 0.458824 0 0 0 0 0.180392 0 0 0 0.35 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
+                    in2="BackgroundImageFix"
                     result="shape"
                   />
                   <feColorMatrix
@@ -714,8 +524,8 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
+                  <feOffset dx="-1" dy="-1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -724,12 +534,83 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
                   />
                   <feBlend
                     mode="normal"
                     in2="shape"
-                    result="effect2_innerShadow_155_1058"
+                    result="effect1_innerShadow_998_799"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_innerShadow_998_799"
+                    result="effect2_innerShadow_998_799"
+                  />
+                </filter>
+              </defs>
+            </svg>
+
+            <!-- <h1 class="[text-shadow:2px_1px_1px_rgb(0_0_0_/_40%)]">M</h1> -->
+          </div>
+          <div
+            @click="play"
+            v-if="isMyWorkActive === true"
+            class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+          >
+            <!-- <audio ref="typingMusic" loop>
+              <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio> -->
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]"
+              viewBox="0 0 16 15"
+              fill="currentColor"
+            >
+              <g filter="url(#filter0_ii_998_799)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 2.5C0 1.39543 0.895431 0.5 2 0.5H10C11.1046 0.5 12 1.39543 12 2.5V12.5C12 13.6046 12.8954 14.5 14 14.5H2C0.895431 14.5 0 13.6046 0 12.5V2.5ZM3 3.5H9V7.5H3V3.5ZM9 9.5H3V11.5H9V9.5Z"
+                />
+                <path
+                  d="M13 4.5H14C15.1046 4.5 16 5.39543 16 6.5V12C16 12.8284 15.3284 13.5 14.5 13.5C13.6716 13.5 13 12.8284 13 12V4.5Z"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_ii_998_799"
+                  x="-1"
+                  y="-0.5"
+                  width="18"
+                  height="16"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -738,7 +619,7 @@
                     result="hardAlpha"
                   />
                   <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -747,192 +628,90 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
                   />
                   <feBlend
                     mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
+                    in2="shape"
+                    result="effect1_innerShadow_998_799"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_innerShadow_998_799"
+                    result="effect2_innerShadow_998_799"
                   />
                 </filter>
               </defs>
             </svg>
-
-            <div class="mt-4">Work</div>
+          </div>
+          <div
+            :class="
+              isMyWorkActive
+                ? 'text-blueMarine drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]'
+                : text - blueMarine
+            "
+          >
+            Work
           </div>
         </button>
         <!-- Contact BUTTON -->
         <button
-          class="text-basehover:text-grey5 text-grey20 flex-col sm:grid justify-items-center font-poppins"
+          class="mx-1 hover:text-grey5 font-semibold text-grey20 flex-col sm:grid justify-items-center font-poppins"
           @click="() => myContact()"
         >
           <!-- text -->
           <div
             @click="play"
             v-if="isMyContactActive === false"
-            class="text-darkGrey justify-items-center rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
-          >
-            <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#646464" />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
-                    result="shape"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
-                  <feComposite
-                    in2="hardAlpha"
-                    operator="arithmetic"
-                    k2="-1"
-                    k3="1"
-                  />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="shape"
-                    result="effect2_innerShadow_155_1058"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feComposite
-                    in2="hardAlpha"
-                    operator="arithmetic"
-                    k2="-1"
-                    k3="1"
-                  />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            <div class="mt-3">Me</div>
-          </div>
-          <!-- aktif -->
-          <div
-            @click="play"
-            v-if="isMyContactActive === true"
-            class="text-darkGrey rounded bg-bone p-3 w-20 h-20 border-2 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+            class="flex mt-0 mb-4 text-grey20 rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
           >
             <!-- <audio ref="typingMusic" loop>
               <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
             </audio> -->
+
             <svg
-              width="50"
-              height="13"
-              viewBox="0 0 43 13"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 21"
+              fill="currentColor"
             >
-              <g filter="url(#filter0_dii_155_1058)">
-                <rect x="5" y="5" width="33" height="3" rx="1" fill="#FF752E" />
+              <g filter="url(#filter0_ii_998_907)">
+                <path
+                  d="M2 3.5C2 2.94772 2.44772 2.5 3 2.5H5.15287C5.64171 2.5 6.0589 2.85341 6.13927 3.3356L6.87858 7.77147C6.95075 8.20451 6.73206 8.63397 6.3394 8.8303L4.79126 9.60437C5.90756 12.3783 8.12168 14.5924 10.8956 15.7087L11.6697 14.1606C11.866 13.7679 12.2955 13.5492 12.7285 13.6214L17.1644 14.3607C17.6466 14.4411 18 14.8583 18 15.3471V17.5C18 18.0523 17.5523 18.5 17 18.5H15C7.8203 18.5 2 12.6797 2 5.5V3.5Z"
+                />
               </g>
               <defs>
                 <filter
-                  id="filter0_dii_155_1058"
-                  x="0.7"
-                  y="0.7"
-                  width="41.6"
-                  height="11.6"
+                  id="filter0_ii_998_907"
+                  x="1"
+                  y="1.5"
+                  width="18"
+                  height="18"
                   filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB"
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_155_1058"
-                  />
-                  <feOffset />
-                  <feGaussianBlur stdDeviation="1.65" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 0.458824 0 0 0 0 0.180392 0 0 0 0.35 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_155_1058"
-                  />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow_155_1058"
+                    in2="BackgroundImageFix"
                     result="shape"
                   />
                   <feColorMatrix
@@ -941,8 +720,31 @@
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                     result="hardAlpha"
                   />
+                  <feOffset dx="-1" dy="-1" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="shape"
+                    result="effect1_innerShadow_998_907"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
                   <feOffset dx="1" dy="1" />
-                  <feGaussianBlur stdDeviation="0.5" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -955,8 +757,51 @@
                   />
                   <feBlend
                     mode="normal"
-                    in2="shape"
-                    result="effect2_innerShadow_155_1058"
+                    in2="effect1_innerShadow_998_907"
+                    result="effect2_innerShadow_998_907"
+                  />
+                </filter>
+              </defs>
+            </svg>
+
+            <!-- <h1 class="[text-shadow:2px_1px_1px_rgb(0_0_0_/_40%)]">M</h1> -->
+          </div>
+          <div
+            @click="play"
+            v-if="isMyContactActive === true"
+            class="flex mt-0 mb-4 text-blueMarine rounded-2xl sm:rounded-3xl bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)]"
+          >
+            <!-- <audio ref="typingMusic" loop>
+              <source src="./src/assets/typingEffect.mp3" type="audio/mpeg" />
+            </audio> -->
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]"
+              viewBox="0 0 20 21"
+              fill="currentColor"
+            >
+              <g filter="url(#filter0_ii_998_907)">
+                <path
+                  d="M2 3.5C2 2.94772 2.44772 2.5 3 2.5H5.15287C5.64171 2.5 6.0589 2.85341 6.13927 3.3356L6.87858 7.77147C6.95075 8.20451 6.73206 8.63397 6.3394 8.8303L4.79126 9.60437C5.90756 12.3783 8.12168 14.5924 10.8956 15.7087L11.6697 14.1606C11.866 13.7679 12.2955 13.5492 12.7285 13.6214L17.1644 14.3607C17.6466 14.4411 18 14.8583 18 15.3471V17.5C18 18.0523 17.5523 18.5 17 18.5H15C7.8203 18.5 2 12.6797 2 5.5V3.5Z"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_ii_998_907"
+                  x="1"
+                  y="1.5"
+                  width="18"
+                  height="18"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -965,7 +810,7 @@
                     result="hardAlpha"
                   />
                   <feOffset dx="-1" dy="-1" />
-                  <feGaussianBlur stdDeviation="1" />
+                  <feGaussianBlur stdDeviation="2" />
                   <feComposite
                     in2="hardAlpha"
                     operator="arithmetic"
@@ -974,44 +819,152 @@
                   />
                   <feColorMatrix
                     type="matrix"
-                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"
+                    values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
                   />
                   <feBlend
                     mode="normal"
-                    in2="effect2_innerShadow_155_1058"
-                    result="effect3_innerShadow_155_1058"
+                    in2="shape"
+                    result="effect1_innerShadow_998_907"
+                  />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite
+                    in2="hardAlpha"
+                    operator="arithmetic"
+                    k2="-1"
+                    k3="1"
+                  />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="effect1_innerShadow_998_907"
+                    result="effect2_innerShadow_998_907"
                   />
                 </filter>
               </defs>
             </svg>
-
-            <div class="mt-4">Me</div>
+          </div>
+          <div
+            :class="
+              isMyContactActive
+                ? 'text-blueMarine drop-shadow-[0_0px_5px_rgba(28,138,157,0.8)]'
+                : text - blueMarine
+            "
+          >
+            Contact
           </div>
         </button>
-        <div class="flex w-full lg:h-full"></div>
-        <!-- button CV -->
-
-        <a href="/files/cv_Masegie_Sep2023.pdf" download>
-          <button
-            class="text-base mx-1 rounded hover:text-grey5 text-grey20 flex-col sm:grid justify-items-center font-poppins"
-          >
-            <!-- text -->
-            <div
-              @click="play"
-              class="text-white rounded justify-items-center bg-orangeMarine p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
+        <div class="w-6"></div>
+        <div
+          class="mx-1 px-1 rounded-full grid w-fit justify-items-center sm:drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)]"
+        >
+          <a href="/files/cv_Masegie_Sep2023.pdf" download>
+            <button
+              class="hover:text-redCVHoverfont-semibold text-redCV flex-col sm:grid justify-items-center font-poppins active:text-grey20"
             >
-              <svg
-                width="50"
-                height="13"
-                viewBox="0 0 43 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              ></svg>
-
-              <div class="mt-3">CV</div>
-            </div>
-          </button>
-        </a>
+              <!-- text -->
+              <div
+                @click="play"
+                class="flex mt-0 mb-4 redCVHover rounded-full bg-darkGrey p-4 w-16 h-16 sm:p-6 sm:w-20 sm:h-20 border-4 border-grey50 drop-shadow-button active:drop-shadow-sm shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-redCVHover hover:bg-grey70 transition transform duration-150 active:shadow-[inset_3px_3px_4px_rgba(0,0,0,0.25),inset_-3px_-3px_9px_rgba(255,255,255,0.04)] active:text-grey50"
+              >
+                <!-- <audio ref="typingMusic" loop>
+                  <source
+                    src="./src/assets/typingEffect.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 19 19"
+                  fill="currentColor"
+                >
+                  <g filter="url(#filter0_ii_1050_1074)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.5366 9.76365C15.8881 10.1151 15.8881 10.685 15.5366 11.0364L10.1366 16.4364C9.78512 16.7879 9.21527 16.7879 8.8638 16.4364L3.4638 11.0364C3.11233 10.685 3.11233 10.1151 3.4638 9.76365C3.81527 9.41218 4.38512 9.41218 4.73659 9.76365L8.6002 13.6273L8.6002 3.20005C8.6002 2.70299 9.00314 2.30005 9.5002 2.30005C9.99725 2.30005 10.4002 2.70299 10.4002 3.20005L10.4002 13.6273L14.2638 9.76365C14.6153 9.41218 15.1851 9.41218 15.5366 9.76365Z"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_ii_1050_1074"
+                      x="2.2002"
+                      y="1.30005"
+                      width="14.6001"
+                      height="16.3999"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="1" dy="1" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_1050_1074"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dx="-1" dy="-1" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.03 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_1050_1074"
+                        result="effect2_innerShadow_1050_1074"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div class="mb-4 font-black">CV</div>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1025,85 +978,19 @@
 
   <!-- button -->
 </template>
+
 <script>
 import { useSound } from "@vueuse/sound";
 import buttonSfx from "../assets/buttonEffect3.mp3";
 import { FaceSmileIcon } from "@heroicons/vue/24/solid";
 import { BeakerIcon } from "@heroicons/vue/24/solid";
 import router from "../router";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-import { ref, onMounted } from "vue";
-
-AOS.init();
 export default {
-  name: "Home",
   setup() {
     const { play } = useSound(buttonSfx);
-    const path = ref(null);
-    let progress = ref(0);
-    let x = ref(0.5);
-    let time = ref(Math.PI / 2);
-    let reqId = null;
 
-    const setPath = (progress) => {
-      console.log("cc");
-      const width = window.innerWidth * 0.7;
-      if (path.value) {
-        path.value.setAttribute(
-          "d",
-          `M0 250 Q${width * x.value} ${250 + progress}, ${width} 250`
-        );
-      }
-    };
-
-    const lerp = (x, y, a) => x * (1 - a) + y * a;
-
-    const manageMouseEnter = () => {
-      if (reqId) {
-        cancelAnimationFrame(reqId);
-        resetAnimation();
-      }
-    };
-
-    const manageMouseMove = (e) => {
-      const { movementY, clientX } = e;
-      const pathBound = path.value.getBoundingClientRect();
-      x.value = (clientX - pathBound.left) / pathBound.width;
-      progress.value += movementY;
-      setPath(progress.value);
-    };
-
-    const manageMouseLeave = () => {
-      animateOut();
-    };
-
-    const animateOut = () => {
-      const newProgress = progress.value * Math.sin(time.value);
-      progress.value = lerp(progress.value, 0, 0.025);
-      time.value += 0.2;
-      setPath(newProgress);
-      if (Math.abs(progress.value) > 0.75) {
-        reqId = requestAnimationFrame(animateOut);
-      } else {
-        resetAnimation();
-      }
-    };
-
-    const resetAnimation = () => {
-      time.value = Math.PI / 2;
-      progress.value = 0;
-    };
-
-    onMounted(() => {
-      setPath(progress.value);
-    });
     return {
       play,
-      path,
-      manageMouseEnter,
-      manageMouseMove,
-      manageMouseLeave,
     };
   },
   props: {
@@ -1127,10 +1014,6 @@ export default {
     },
     timeoutSpeed() {
       return this.speed;
-    },
-    bezierPath() {
-      // Generates the cubic Bézier path string
-      return `M ${this.startX} ${this.startY} C ${this.controlX1} ${this.controlY1}, ${this.controlX2} ${this.controlY2}, ${this.endX} ${this.endY}`;
     },
   },
   mounted() {
@@ -1159,29 +1042,10 @@ export default {
 
       backgroundClass: "",
 
-      startX: 50, // Start point X
-      startY: 150, // Start point Y
-      controlX1: 150, // Control point 1 X
-      controlY1: 50, // Control point 1 Y
-      controlX2: 250, // Control point 2 X
-      controlY2: 50, // Control point 2 Y
-      endX: 350, // End point X
-      endY: 150, // End point Y
-
       //      file: "../assets/buttonEffect3.mp3",
     };
   },
   methods: {
-    setPath(value) {
-      console.log("cc");
-      const width = window.innerWidth * 0.7;
-      const pathData = `M 0 50 Q ${width * x} ${50 + value} ${width} 50`;
-      console.log(pathData); // Log path data for debugging
-
-      if (path.value) {
-        path.value.setAttributeNS(null, "d", pathData);
-      }
-    },
     changeBackground() {
       let cycleCount = 0;
       const interval = setInterval(() => {
@@ -1206,7 +1070,6 @@ export default {
         }
       }, 500); // 2 seconds interval
     },
-
     playMusic() {
       this.$refs.bgMusic.play();
     },
@@ -1245,7 +1108,6 @@ export default {
       // Remove the link from the document
       document.body.removeChild(link);
     },
-
     start() {
       if (this.content && this.content.length > 0) {
         this.currentWord = this.content[this.wordIdx].split("");
@@ -1324,20 +1186,20 @@ export default {
       }
     },
     type(word) {
-      //  this.$refs.typingMusic.play();
+      this.$refs.typingMusic.play();
       if (this.currentWord.length > 0) {
         this.displayText.push(this.currentWord.shift());
         // if done typing, then delete
       } else if (this.currentWord.length === 0 && this.displayText.length > 0) {
         this.content = "";
-        ///   this.$refs.typingMusic.pause();
+        this.$refs.typingMusic.pause();
         // if done typing & deleting
       }
       setTimeout(this.type, this.timeoutSpeed);
     },
     type2nd(word) {
       // if typing...
-      // this.$refs.typingMusic.play();
+      this.$refs.typingMusic.play();
       if (this.currentWord2nd.length > 0) {
         this.displayText2nd.push(this.currentWord2nd.shift());
         // if done typing, then delete
@@ -1346,7 +1208,7 @@ export default {
         this.displayText2nd.length > 0
       ) {
         this.content = "";
-        // this.$refs.typingMusic.pause();
+        this.$refs.typingMusic.pause();
         // if done typing & deleting
       }
 
@@ -1356,104 +1218,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .no-pull-to-refresh {
   overscroll-behavior: none;
 }
 
 html {
   overscroll-behavior: none;
-}
-.container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 70vw;
-}
-
-.description,
-.tagsContainer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.description p {
-  font-size: 12px;
-  margin: 0px;
-}
-.description p:nth-of-type(1) {
-  margin-top: 8px;
-}
-.description p:nth-of-type(2) {
-  font-size: 28px;
-  width: 700px;
-  margin-left: 30px;
-}
-.tagsContainer {
-  display: flex;
-  margin-top: 50px;
-}
-
-.tagsContainer p {
-  margin: 0px;
-}
-
-.tags {
-  display: flex;
-  width: 700px;
-  margin-left: 30px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tags p {
-  border: 1px solid white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 16px;
-  padding: 10px 12px 10px 12px;
-}
-
-.line {
-  height: 1px;
-  margin-bottom: 20px;
-  width: 100%;
-  position: relative;
-}
-
-.line svg {
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  top: -250px;
-}
-
-.line svg path {
-  stroke: black;
-  stroke-width: 3px;
-  fill: none;
-}
-
-.line .box {
-  height: 40px;
-  width: 100%;
-  position: relative;
-  top: -20px;
-  z-index: 1;
-}
-
-.line .box:hover {
-  height: 500px;
-  top: -250px;
 }
 </style>

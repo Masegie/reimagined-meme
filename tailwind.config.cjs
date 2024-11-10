@@ -8,6 +8,7 @@ module.exports = {
       black0: "#010105",
       black: "#0D0D0D",
       white: "#F6F6F6",
+      white10: "#EEEEEE",
       darkGrey: "#212225",
       blueMarine: "#66D5E9",
       grey5: "#C6C6C6",
@@ -34,6 +35,8 @@ module.exports = {
       manggo2: "#D03C0D",
       manggo3: "#B12F06",
       redCV: "#9C0000",
+      bone: "#F2EBE3",
+      orangeMarine: "#FF5C00",
       redCVHover: "#EA0000",
     },
     fontFamily: {
