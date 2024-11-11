@@ -104,20 +104,47 @@
                 <br />
               </div>
               <div v-if="isMyContactActive === true" class="text-left">
-                <div class="body">
+                <!-- <div class="body">
                   <div class="line">
                     <div
                       @mouseenter="manageMouseEnter"
                       @mousemove="manageMouseMove"
                       @mouseleave="manageMouseLeave"
                       class="box"
-                    >
-                      _
-                    </div>
+                    ></div>
                     <svg>
                       <path ref="path">a</path>
                     </svg>
                   </div>
+                </div> -->
+
+                <div class="relative flex py-5 items-center justify-center">
+                  <a
+                    href="https://dribbble.com/dreamola"
+                    class="font-cursive mr-8 text-text-grey70 text-center"
+                    target="_blank"
+                    >instagram</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/masegie/"
+                    class="font-cursive text-orangeMarine text-center"
+                    target="_blank"
+                    >linked in</a
+                  >
+                </div>
+
+                <div class="relative flex py-5 items-center justify-center">
+                  <a
+                    href="mailto:masegihandoyo@gmail.com?subject=Hello&body=Hello"
+                    class="font-cursive mr-8 text-orangeMarine text-center"
+                    >Email Me</a
+                  >
+                  <a
+                    href="https://dribbble.com/dreamola"
+                    class="font-cursive text-grey70 text-center"
+                    target="_blank"
+                    >Dribbble</a
+                  >
                 </div>
 
                 <br />
@@ -988,7 +1015,7 @@
               </defs>
             </svg>
 
-            <div class="mt-3">Desire</div>
+            <div class="mt-3">Reach</div>
           </div>
           <!-- aktif -->
           <div
@@ -1100,7 +1127,7 @@
               </defs>
             </svg>
 
-            <div class="mt-4">Desire</div>
+            <div class="mt-4">Reach</div>
           </div>
         </button>
         <div class="flex w-full lg:h-full"></div>
@@ -1433,8 +1460,8 @@ export default {
     myContact() {
       this.displayText = [""];
       this.displayText2nd = [""];
-      this.content = ["Contact"];
-      this.content2nd = ["Email : masegihandoyo@gmail.com"];
+      this.content = ["Reach ME!"];
+      this.content2nd = [""];
 
       this.start();
       this.start2nd();

@@ -49,10 +49,7 @@
                       <span class="mt-12">Product and platform</span>
                     </div>
                     <div class="relative flex justify-left text-xl">
-                      <span class="mt-8"
-                        >Lentera is an online book application, which at the
-                        time I designed for the MVP, read the journey here.
-                      </span>
+                      <span class="mt-8">Its our Internal websites </span>
                     </div>
                   </div>
                   <div>

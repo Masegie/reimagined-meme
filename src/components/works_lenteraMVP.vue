@@ -52,8 +52,7 @@
                     </div>
                     <div class="relative flex justify-left text-xl">
                       <span class="mt-8"
-                        >Lentera is an online book application, which at the
-                        time I designed for the MVP, read the journey here.
+                        >Lentera is an online book application.
                       </span>
                     </div>
                   </div>
