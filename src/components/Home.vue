@@ -198,8 +198,8 @@
                     </div>
                     <div class="text-grey10 text-left">
                       <div class="text-2xl lg:text-2xl text-black">
-                        After my client disappeared after approving my design on
-                        my first project.
+                        My client disappeared after approving my design on my
+                        first project.
                       </div>
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
@@ -306,8 +306,19 @@
                       </div>
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
-                      <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
-                        <img src="/images/moon.png" class="" />
+                      <div
+                        class="lg:col-span-3 col-span-3 grid grid-cols-3 gap-4"
+                      >
+                        <img
+                          src="/images/Home_Page.png"
+                          class="object-contain h-80 w-192"
+                        /><img
+                          src="/images/Book_Detail.png"
+                          class="object-contain h-80 w-192"
+                        /><img
+                          src="/images/Change Membership.png"
+                          class="object-contain h-80 w-192"
+                        />
                       </div>
                     </div>
                     <div class="grid grid-cols-5 gap-8 mt-4">
@@ -341,7 +352,7 @@
                     </div>
                   </div>
                   <!-- 4 -->
-                  <div
+                  <!-- <div
                     @click="handleClickLentera"
                     class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-white"
                   >
@@ -390,7 +401,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <br />
                 <br />

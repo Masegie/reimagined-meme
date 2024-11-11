@@ -21,17 +21,16 @@
                 >
                   <img
                     class="object-contain h-80 w-128"
-                    src="/images/beforeDim.png"
-                  />
-                  <img
-                    class="object-contain ml-4 h-80 w-128"
-                    src="/images/dim.png"
+                    src="/images/thumbnailVar.png"
                   />
                 </div>
                 <div
                   class="relative font-poppins font-bold flex justify-left text-4xl"
                 >
-                  <span class="mt-8">Bring the lantern to Lentera</span>
+                  <span class="mt-8"
+                    >Exploring Figma Variable while Redesign Klik
+                    Indomaret</span
+                  >
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                   <div>
@@ -39,7 +38,7 @@
                       <span class="mt-12">Role</span>
                     </div>
                     <div class="relative flex justify-left text-xl">
-                      <span class="mt-8">UI & UX Designer </span>
+                      <span class="mt-8">Figma Explorer</span>
                     </div>
                   </div>
                   <div>
@@ -47,17 +46,18 @@
                       <span class="mt-12">Timeline</span>
                     </div>
                     <div class="relative flex justify-left text-xl">
-                      <span class="mt-8">Mar 2022 </span>
+                      <span class="mt-8">Sep 2023 </span>
                     </div>
                   </div>
                   <div>
                     <div class="relative flex justify-left text-3xl">
-                      <span class="mt-12">Product and platform</span>
+                      <span class="mt-12">Product</span>
                     </div>
                     <div class="relative flex justify-left text-xl">
                       <span class="mt-8"
-                        >Lentera is an online book application, which at the
-                        time I designed for the MVP, read the journey here.
+                        >Klik Indomaret is like having Indomaret at your
+                        fingertips, offering all your favorite products
+                        conveniently online, but.
                       </span>
                     </div>
                   </div>
@@ -67,43 +67,49 @@
                     </div>
                     <div class="relative flex justify-left text-xl">
                       <span class="mt-8"
-                        >Trying out the solution will help us see if using
-                        highlights makes it easier for users who need extra
-                        focus.
+                        >People can shop more efficiently when the display is
+                        straightforward and to the point. And exploring some new
+                        features and learning them will also speed up our work.
                       </span>
                     </div>
                   </div>
                 </div>
                 <div class="relative flex py-24 items-center"></div>
                 <div class="relative flex py-5 items-center">
-                  <span class="flex-shrink mr-4 text-black">The Problem</span>
+                  <span class="flex-shrink mr-4 text-black">Overview</span>
                   <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    Some new book readers may not feel at ease reading on online
-                    book applications because They cant stay on track, they're
-                    having trouble staying focused and keep reading.
+                    In July 2023, Figma rolled out some cool new features. One
+                    feature that stood out to me was Variables. This feature
+                    allows you to create and modify values across different
+                    design elements like color, text, and size. I decided to
+                    test it out while revamping the "Klik Indomaret" App.
                   </span>
                 </div>
 
                 <div class="relative flex mt-24 mb-8 items-center">
-                  <span class="flex-shrink mr-4 text-black">Challenges</span>
+                  <span class="flex-shrink mr-4 text-black">Problem</span>
                   <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    1. Creating a subtle focus effect can be tricky. It should
-                    guide attention without being distracting, enhancing focus
-                    without overwhelming users.
+                    Lots of customers left negative reviews on the Play Store
+                    and App Store. So, I decided to dig into why this app got
+                    such low ratings.
                   </span>
                 </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    2. Maintaining Readability with Dynamic Changes Frequent
-                    shifts in highlight and dimming as users read can disrupt
-                    reading flow.
-                  </span>
+                <div class="relative flex justify-center">
+                  <img
+                    class="object-contain h-36 lg:h-96 lg:w-192"
+                    src="/images/review.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2">Image: some review from playstore </span>
                 </div>
 
                 <div class="relative flex mt-24 mb-8 items-center">
@@ -114,38 +120,69 @@
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    I interviewed to 3 new readers who have only read books
-                    online a few times in the last year and 3 old readers who
-                    have done the opposite. I discovered that
+                    I interviewed to 3 people. The user archetypes are people
+                    who frequent online shopping. I discovered that
                   </span>
                 </div>
                 <div class="relative flex justify-left text-2xl font-regular">
-                  <span class="mt-4"> Struggle to stay focused</span>
-                </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    Readers with ADHD struggle to stay focused on the sentence
-                    they're reading.
+                  <span class="mt-4"
+                    >Too much information on the Home page
                   </span>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    Sometimes readers find themselves needing to always look for
-                    where they left off in the text. This can be quite
-                    distracting and disrupt the flow of reading.</span
-                  >
+                    Customers who have a clear idea of their purchase are often
+                    overwhelmed upon entering the application due to its
+                    cluttered interface. This can lead to confusion and
+                    frustration, impacting their overall experience negatively.
+                  </span>
                 </div>
                 <div class="relative mt-8 flex justify-center">
                   <img
-                    class="object-contain h-96 w-192"
-                    src="/images/Read_Book_Screen.png"
+                    class="object-contain mr-8 h-44 lg:h-96 lg:w-192"
+                    src="/images/homePageBefore.png"
+                  />
+                  <img
+                    class="object-contain h-44 lg:h-96 lg:w-192"
+                    src="/images/searchBefore.png"
                   />
                 </div>
                 <div
                   class="relative flex justify-center text-sm font-thin italic lg:text-md"
                 >
-                  <span class="mt-2">Image: Reading Page </span>
+                  <span class="mt-4 mb-8">Image: Home page and search </span>
                 </div>
+                <div class="relative flex justify-left text-2xl font-regular">
+                  <span class="mt-4">Information is not clear </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Customers may face inconvenience when they add items to the
+                    cart but later forget what they added or the total price
+                    they have purchased, requiring them to click on the cart
+                    button to check, then return to shopping. This process
+                    diminishes the overall shopping experience due to the time
+                    it consumes.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-44 lg:h-96 lg:w-192"
+                    src="/images/klikCartBefore.png"
+                  />
+                  <img
+                    class="object-contain h-44 lg:h-96 lg:w-192"
+                    src="/images/checkOutPageBefore.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: shopping page and checkout(Cart) page
+                  </span>
+                </div>
+
                 <div class="relative flex mt-24 mb-8 items-center">
                   <span class="flex-shrink mr-4 text-black"
                     >Design Exploration</span
@@ -154,96 +191,249 @@
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    Instead of making this just a simple online book apps named
-                    LENTERA, i want to take this opportunity to make LENTERA
-                    becomes top of comfortable and focused books app
+                    With great feedback comes great responsibility. I attempted
+                    to design the interface by incorporating user feedback and
+                    eliminating unnecessary elements to enhance user clarity.
                   </span>
                 </div>
                 <div class="relative flex justify-left text-2xl">
-                  <span class="mt-8"> A light that comfort </span>
+                  <span class="mt-8"> To the point </span>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    one of the fun parts of this project was designing many
-                    different light effects and animations to turn on and off. I
-                    took inspiration for the animations from my experience when
-                    I watching movies in theaters early before the movie starts.
-                    Instead of animating the light coming in and out, make it
-                    like a lantern.
+                    Because users are confused at the beginning of entering the
+                    application because it is too crowded and there is a lot of
+                    information there, so I try to make it more to the point to
+                    the purpose of this application, which is to shop.
                   </span>
                 </div>
-                <div class="grid grid-cols-3 gap-8 mt-8">
-                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
-                    <img src="/images/dimming2.gif" class="" />
-                  </div>
-                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
-                    <img src="/images/dimming3.gif" class="" />
-                  </div>
-                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
-                    <img src="/images/dimming5.gif" class="" />
-                  </div>
-                </div>
-                <div
-                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
-                >
-                  <span class="mt-2">Image: design exploration </span>
-                </div>
-                <div class="relative flex mt-24 mb-8 items-center">
-                  <span class="flex-shrink mr-4 text-black"
-                    >Test and Iteration</span
-                  >
-                  <div class="flex-grow border-t border-orangeMarine"></div>
-                </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    Usability Tests with some book reader friend who never
-                    trying read book on app and my friend who usually reading
-                    books via app
-                  </span>
-                </div>
-                <div class="relative flex justify-left text-2xl">
-                  <span class="mt-8"
-                    >Problem: they dont know how to turn off the highlight</span
-                  >
-                </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    with no button that shine, and cant click they dont
-                    understand how to turing the highlight off after they
-                    finish.
-                  </span>
-                </div>
-                <div class="relative flex justify-left text-2xl">
-                  <span class="mt-8"
-                    >Problem: They have trouble opening the next page
-                  </span>
-                </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    Users struggle to open the next page because the pagination
-                    section is too dark, making it hard to see.
-                  </span>
-                </div>
-                <div class="relative flex justify-left text-2xl">
-                  <span class="mt-8">Iteration: Create the Moon button </span>
-                </div>
-                <div class="relative flex justify-left text-xl font-thin">
-                  <span class="mt-2">
-                    I put in a moon button for turning on and off that isn't
-                    annoying even when it's on, and it also displays pagination.
-                  </span>
-                </div>
-                <div class="relative flex justify-center">
+                <div class="relative mt-8 flex justify-center">
                   <img
-                    class="object-contain h-96 w-192"
-                    src="/images/beforeAfterDim.png"
+                    class="object-contain mr-8 h-44 lg:h-96 lg:w-192"
+                    src="/images/homePageAfter.png"
+                  />
+                  <img
+                    class="object-contain h-44 lg:h-96 lg:w-192"
+                    src="/images/searchAfter.png"
                   />
                 </div>
                 <div
                   class="relative flex justify-center text-sm font-thin italic lg:text-md"
                 >
-                  <span class="mt-2"
-                    >Image: before and after the iteration
+                  <span class="mt-4"
+                    >Image: Homepage design and seacrh exploration
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8"> Clear wording and better user flow </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Because users are confused at the beginning of entering the
+                    application because it is too crowded and there is a lot of
+                    information there, so I try to make it more to the point to
+                    the purpose of this application, which is to shop.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/klikCartAfter.png"
+                  /><img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/klikCartAfter2.png"
+                  />
+                  <img
+                    class="object-contain h-36 lg:h-96 lg:w-192"
+                    src="/images/checkOutPageAfter.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: Shoping page and real cart page
+                  </span>
+                </div>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >More Exploration!</span
+                  >
+                  <div class="flex-grow border-t border-orangeMarine"></div>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    After knowing the latest features of figma
+                    <span class="font-normal"
+                      >(thanks to mas Fauzy Lukman for introducing me and
+                      teaching me to make dark mode with variables)</span
+                    >
+                    I tried to create a variable to change to dark mode and
+                    tried to create a variable to calculate the number of items
+                    purchased and total price
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8"> Dark mode with variable </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    The first thing we have to do is to create a library of
+                    colors from the local variable menu on the right side of the
+                    display on figma.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/lib0.png"
+                  />
+                  <img
+                    class="object-contain h-36 lg:h-96 lg:w-192"
+                    src="/images/lib1.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: the menu and the colors library
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    After that we create another library to distinguish dark
+                    mode and light mode. and when we press one of the frames,
+                    the dark mode token that we have created will appear. and
+                    don't forget to use the colors that are already in the
+                    library.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/lib2.png"
+                  />
+                  <img
+                    class="object-contain mr-8 h-20 w-192"
+                    src="/images/dark.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: the dark,light mode colors library and the token on
+                    side menu
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    and we can change it as needed easily
+                    <span class="font-normal"
+                      >without the need to create 2 versions</span
+                    >
+                    mode
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/darkHome.png"
+                  />
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/darkSearch.png"
+                  />
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/homePageAfter.png"
+                  />
+                  <img
+                    class="object-contain h-36 lg:h-96 lg:w-192"
+                    src="/images/searchAfter.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: Dark and light Homepage design and seacrh
+                    exploration
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8"> Variable to count the cart </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    And for this part the method is the same as creating a
+                    variable for the color token earlier, only now it is in the
+                    form of a number.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/varAngka.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4">Image: initiate the variable </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-8">
+                    And the next step is to create the formula that we also
+                    created when creating the prototype.
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/minRum.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: the example when pressing the min button
+                  </span>
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain mr-8 h-36 lg:h-96 lg:w-192"
+                    src="/images/plusRum.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-4"
+                    >Image: the example when pressing the plus button
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-8">
+                    After that we can make the prototype.
+                  </span>
+                </div>
+                <div class="mt-8 relative mt-8 flex justify-center">
+                  <div class="">
+                    <img src="/images/varProto.gif" class="" />
+                  </div>
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2">Image: the prototype </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-8">
+                    Maybe this not perfect, and we need to explore more and if
+                    you want to try the prototype, you can contact me!
                   </span>
                 </div>
                 <div class="relative flex mt-24 mb-8 items-center">
@@ -257,13 +447,14 @@
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    You’d learn whether the highlight feature effectively
-                    enhances focus for most users, as well as which user groups
-                    find it most helpful Without gathering any feedback from out
-                    user, we might have ended up with just a nice-to-have idea
-                    instead of a valuable feature.
+                    After conducting UT with the same person and the same
+                    scenario as before, it can be concluded that users can focus
+                    on shopping without distractions and faster because I also
+                    reduce several steps when adding or viewing carts to be more
+                    efficient.
                   </span>
                 </div>
+
                 <br />
               </div>
             </div>
