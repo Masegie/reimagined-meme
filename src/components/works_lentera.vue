@@ -16,14 +16,16 @@
             >
               <br />
               <div class="text-left md:px-48">
-                <div class="relative flex justify-center hidden">
+                <div
+                  class="relative py-8 flex justify-center ring ring-1 ring-black rounded bg-gradient-to-r from-white via-white to-yellow0"
+                >
                   <img
-                    class="object-contain h-64 w-128"
-                    src="/images/Home_Page.png"
+                    class="object-contain h-80 w-128"
+                    src="/images/beforeDim.png"
                   />
                   <img
-                    class="object-contain ml-4 h-64 w-128"
-                    src="/images/Read_Book_Screen.png"
+                    class="object-contain ml-4 h-80 w-128"
+                    src="/images/dim.png"
                   />
                 </div>
                 <div
@@ -31,27 +33,51 @@
                 >
                   <span class="mt-8">Bring the lantern to Lentera</span>
                 </div>
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-12">Product and platform</span>
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <div class="relative flex justify-left text-3xl">
+                      <span class="mt-12">Role</span>
+                    </div>
+                    <div class="relative flex justify-left text-xl">
+                      <span class="mt-8">UI & UX Designer </span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative flex justify-left text-3xl">
+                      <span class="mt-12">Timeline</span>
+                    </div>
+                    <div class="relative flex justify-left text-xl">
+                      <span class="mt-8">Mar 2022 </span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative flex justify-left text-3xl">
+                      <span class="mt-12">Product and platform</span>
+                    </div>
+                    <div class="relative flex justify-left text-xl">
+                      <span class="mt-8"
+                        >Lentera is an online book application, which at the
+                        time I designed for the MVP, read the journey here.
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative flex justify-left text-3xl">
+                      <span class="mt-12">Result</span>
+                    </div>
+                    <div class="relative flex justify-left text-xl">
+                      <span class="mt-8"
+                        >Trying out the solution will help us see if using
+                        highlights makes it easier for users who need extra
+                        focus.
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div class="relative flex justify-left text-xl">
-                  <span class="mt-8"
-                    >Lentera is an online book application, which at the time I
-                    designed for the MVP, read the journey here.
-                  </span>
-                </div>
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-12">Result</span>
-                </div>
-                <div class="relative flex justify-left text-xl">
-                  <span class="mt-8"
-                    >Trying out the solution will help us see if using
-                    highlights makes it easier for users who need extra focus.
-                  </span>
-                </div>
-
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-8"> The Problem </span>
+                <div class="relative flex py-24 items-center"></div>
+                <div class="relative flex py-5 items-center">
+                  <span class="flex-shrink mr-4 text-black">The Problem</span>
+                  <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
@@ -61,8 +87,9 @@
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-8"> Chalenge </span>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black">Challenges</span>
+                  <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
@@ -79,8 +106,11 @@
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-8"> Research and Findings </span>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Research and Findings
+                  </span>
+                  <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
@@ -105,9 +135,22 @@
                     distracting and disrupt the flow of reading.</span
                   >
                 </div>
-
-                <div class="relative flex justify-left text-3xl">
-                  <span class="mt-8"> Design Exploration </span>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain h-96 w-192"
+                    src="/images/Read_Book_Screen.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2">Image: Reading Page </span>
+                </div>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Design Exploration</span
+                  >
+                  <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
                 <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
@@ -145,46 +188,74 @@
                 >
                   <span class="mt-2">Image: design exploration </span>
                 </div>
-                <div class="relative flex justify-left text-xl">
-                  <span class="mt-8"> Test and Iteration</span>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Test and Iteration</span
+                  >
+                  <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
                     Usability Tests with some book reader friend who never
                     trying read book on app and my friend who usually reading
                     books via app
                   </span>
                 </div>
-                <div class="relative flex justify-left text-lg">
+                <div class="relative flex justify-left text-2xl">
                   <span class="mt-8"
                     >Problem: they dont know how to turn off the highlight</span
                   >
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
                     with no button that shine, and cant click they dont
                     understand how to turing the highlight off after they
                     finish.
                   </span>
                 </div>
-                <div class="relative flex justify-left text-lg">
+                <div class="relative flex justify-left text-2xl">
                   <span class="mt-8"
-                    >Problem: they dont used to scrolling the
+                    >Problem: They have trouble opening the next page
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    they are not used to reading on the same line because the
-                    page is scrolling
+                    Users struggle to open the next page because the pagination
+                    section is too dark, making it hard to see.
                   </span>
                 </div>
-                <div class="relative flex justify-left text-xl">
-                  <span class="mt-8">LESSON LEARNED</span>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8">Iteration: Create the Moon button </span>
                 </div>
-                <div class="relative flex justify-left text-lg">
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    I put in a moon button for turning on and off that isn't
+                    annoying even when it's on, and it also displays pagination.
+                  </span>
+                </div>
+                <div class="relative flex justify-center">
+                  <img
+                    class="object-contain h-96 w-192"
+                    src="/images/beforeAfterDim.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2"
+                    >Image: before and after the iteration
+                  </span>
+                </div>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Lesson Learned</span
+                  >
+                  <div class="flex-grow border-t border-orangeMarine"></div>
+                </div>
+                <div class="relative flex justify-left text-2xl">
                   <span class="mt-8">User Feedback on Focus Effectiveness</span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
                     You’d learn whether the highlight feature effectively
                     enhances focus for most users, as well as which user groups

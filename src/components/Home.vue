@@ -240,6 +240,57 @@
                   <!-- 3 -->
                   <div
                     @click="handleClickLentera"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-white hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
+                  >
+                    <div
+                      class="text-left text-grey10 flex justify-between text-xs py-2"
+                    >
+                      <div>MOBILE APP . UI DESIGNER</div>
+                      <div>2021</div>
+                    </div>
+                    <div class="text-grey10 text-left">
+                      <div class="text-2xl lg:text-2xl text-black">
+                        My First MVP Porject.
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-8 mt-4">
+                      <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
+                        <img src="/images/moon.png" class="" />
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-8 mt-4">
+                      <div
+                        class="text-xl text-grey10 text-left lg:col-span-4 col-span-4 grid grid-cols-1"
+                      >
+                        The Books APP "Lentera"
+                      </div>
+                      <div
+                        class="lg:col-span-1 col-span-1 grid grid-cols-1 content-end"
+                      >
+                        <div class="lg:justify-end">
+                          <div class="flex text-sm justify-end rounded-lg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="w-4 h-4 ml-2"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div
+                    @click="handleClickLentera"
                     class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-white"
                   >
                     <div
