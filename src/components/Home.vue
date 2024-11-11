@@ -73,13 +73,13 @@
                   <div class="flex-grow text-right">2021-Present</div>
                 </div>
                 <div
-                  class="text-sm sm:text-2xl text-grey20 relative flex pt-4 items-center"
+                  class="text-sm sm:text-2xl text-grey5 relative flex pt-4 items-center"
                 >
                   <div class="flex-grow">Full Stack Developer</div>
                   <div class="flex-grow text-right">2021-2022</div>
                 </div>
                 <div
-                  class="text-sm sm:text-2xl text-grey20 relative flex pt-4 items-center"
+                  class="text-sm sm:text-2xl text-grey5 relative flex pt-4 items-center"
                 >
                   <div class="flex-grow">FE Developer</div>
                   <div class="flex-grow text-right">2020-2021</div>
@@ -111,9 +111,11 @@
                       @mousemove="manageMouseMove"
                       @mouseleave="manageMouseLeave"
                       class="box"
-                    ></div>
+                    >
+                      _
+                    </div>
                     <svg>
-                      <path ref="path"></path>
+                      <path ref="path">a</path>
                     </svg>
                   </div>
                 </div>
@@ -134,7 +136,7 @@
                   <!-- 1 -->
                   <div
                     @click="handleClickLentera"
-                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-white hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
                   >
                     <div
                       class="text-left text-grey10 flex justify-between text-xs py-2"
@@ -157,7 +159,7 @@
                       <div
                         class="text-xl text-grey10 text-left lg:col-span-4 col-span-4 grid grid-cols-1"
                       >
-                        A Moon In Your Book
+                        Bring the lantern to Lentera
                       </div>
                       <div
                         class="lg:col-span-1 col-span-1 grid grid-cols-1 content-end"
@@ -186,7 +188,7 @@
                   <!-- 2 -->
                   <div
                     @click="handleClickDadJokesLoading"
-                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-black hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
+                    class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-white hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
                   >
                     <div
                       class="text-left text-grey10 flex justify-between text-xs py-2"
@@ -238,8 +240,7 @@
                   <!-- 3 -->
                   <div
                     @click="handleClickLentera"
-                    class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-black"
-                    data-aos="fade-up"
+                    class="p-4 border border-grey20 rounded-xl relative item-center hover:bg-white"
                   >
                     <div
                       class="text-orangeMarine text-left flex justify-between text-xs font-cursive py-2"
@@ -305,7 +306,7 @@
       class="fixed w-full sm:static bottom-0 border-t-2 sm:border-t-0 left-0 flex bg-bone pr-4 lg:basis-1/12 justify-center"
     >
       <div
-        class="ml-8 lg:ml-4 m-4 my-8 lg:my-0 lg:flex-col flex justify-items-center w-full lg:items-center justify-start lg:text-xl text-sm sm:text-lg"
+        class="ml-8 lg:ml-4 m-4 my-8 lg:my-0 lg:flex-col flex justify-items-center w-full lg:items-center justify-start text-sm sm:text-lg"
       >
         <!-- ME BUTTON -->
         <button
@@ -873,7 +874,7 @@
               </defs>
             </svg>
 
-            <div class="mt-3">Me</div>
+            <div class="mt-3">Desire</div>
           </div>
           <!-- aktif -->
           <div
@@ -985,7 +986,7 @@
               </defs>
             </svg>
 
-            <div class="mt-4">Me</div>
+            <div class="mt-4">Desire</div>
           </div>
         </button>
         <div class="flex w-full lg:h-full"></div>
@@ -998,7 +999,7 @@
             <!-- text -->
             <div
               @click="play"
-              class="text-white rounded justify-items-center bg-orangeMarine p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-grey70"
+              class="text-white rounded justify-items-center bg-orangeMarine p-3 w-20 h-20 border-2 border-grey50 drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] hover:text-grey5 hover:bg-manggo2"
             >
               <svg
                 width="50"
@@ -1047,7 +1048,7 @@ export default {
     let reqId = null;
 
     const setPath = (progress) => {
-      console.log("cc");
+      console.log("ca");
       const width = window.innerWidth * 0.7;
       if (path.value) {
         path.value.setAttribute(
@@ -1371,7 +1372,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: black;
-  color: white;
+  color: black;
 }
 
 .body {
@@ -1417,7 +1418,7 @@ html {
 }
 
 .tags p {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 16px;

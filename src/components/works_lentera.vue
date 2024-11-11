@@ -1,75 +1,18 @@
 <template>
   <div
-    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-darkGrey sm:pt-8 lg:py-8 sm:pb-2"
+    class="relative min-h-screen max-h-screen flex flex-col lg:flex-row overflow-hidden bg-bone sm:pt-8 lg:py-8 sm:pb-2"
   >
     <!-- Screen -->
     <div class="flex flex-col flex-1 lg:basis-9/12">
-      <div
-        class="drop-shadow-button shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] bg-black0 ring-darkGrey mx-0 sm:mx-8 rounded-md h-16"
-      >
-        <div
-          class="mx-5 py-6 sm:mx-10 relative text-xs text-blueMarine grid grid-cols-2 sm:flex justify-between p-2 gap-2"
-        >
-          <div class="col-span-1 flex">
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 mr-2"
-              @click="handleClickHome"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5 8.25 12l7.5-7.5"
-              />
-            </svg> -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 mr-2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-              />
-            </svg>
-            UI Designer
-          </div>
-          <div class="col-span-1 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 h-4 mr-2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-              />
-            </svg>
-            Apr 2022
-          </div>
-        </div>
-      </div>
       <!-- Main Screen -->
 
       <div
-        class="flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-black px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
+        class="flex-1 shadow-[inset_-2px_-2px_4px_rgba(0,0,0,0.25),inset_2px_2px_9px_rgba(255,255,255,0.05)] relative flex overflow-auto bg-white10 px-6 xl:pt-8 pb-8 ring-2 ring-darkGrey mx-0 sm:mx-8 rounded-md"
       >
         <div class="mx-auto">
           <div class="absolute inset-x-0">
             <div
-              class="grow text-white text-left lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow text-black text-left lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <br />
               <div class="text-left md:px-48">
@@ -104,97 +47,105 @@
                   <span class="mt-8"
                     >Trying out the solution will help us see if using
                     highlights makes it easier for users who need extra focus.
-                    We might also learn about what users like to customize and
-                    spot any problems with slower devices.
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-lg">
+                <div class="relative flex justify-left text-3xl">
                   <span class="mt-8"> The Problem </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    kebanyakan diantara aplikasi baca buku online cara bacanya
-                    masih kurang nyaman karena 1. readers cant stay on track,
-                    reducing the chance of losing their place in long text. 2.
-                    Dengan menyajikan area fokus yang jelas, pembaca tidak perlu
-                    terus-menerus mencari posisi mereka dalam teks, yang bisa
-                    membantu mengurangi kelelahan mata. 3. Highlight yang
-                    berfokus pada kalimat aktif dapat membantu pembaca pemula
-                    atau lansia yang mungkin mengalami kesulitan mengikuti baris
-                    demi baris dalam teks panjang. Dengan bimbingan visual ini,
-                    membaca bisa terasa lebih mudah dan teratur.
+                    Some new book readers may not feel at ease reading on online
+                    book applications because They cant stay on track, they're
+                    having trouble staying focused and keep reading.
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-3xl">
                   <span class="mt-8"> Chalenge </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    1. Creating a Non-Intrusive Focus Effect Designing a
-                    highlight that guides attention without feeling distracting
-                    is tricky. The effect needs to be subtle yet effective,
-                    enhancing focus without overwhelming users or causing visual
-                    fatigue.
+                    1. Creating a subtle focus effect can be tricky. It should
+                    guide attention without being distracting, enhancing focus
+                    without overwhelming users.
                   </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
                     2. Maintaining Readability with Dynamic Changes Frequent
                     shifts in highlight and dimming as users read can disrupt
-                    reading flow. Ensuring these changes feel smooth and
-                    natural, without abrupt transitions, is crucial for a
-                    comfortable experience.
-                  </span>
-                  <span class="mt-2">
-                    tidak semua user kita adalah pengguna baru
+                    reading flow.
                   </span>
                 </div>
 
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-3xl">
                   <span class="mt-8"> Research and Findings </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    mewawancarai 3 pembaca baru yang baru atau kurang dari 3
-                    kali membaca buku secara online dalam 1 tahun terakhir dan 3
-                    pembaca buku lama yang kebalikanya dan mendapaktan hasil
-                    bahwa
+                    I interviewed to 3 new readers who have only read books
+                    online a few times in the last year and 3 old readers who
+                    have done the opposite. I discovered that
                   </span>
+                </div>
+                <div class="relative flex justify-left text-2xl font-regular">
+                  <span class="mt-4"> Struggle to stay focused</span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    Pembaca buku baru memiliki masalah dalam fokus terhadap
-                    kalimat yang sedang mereka baca</span
+                    Readers with ADHD struggle to stay focused on the sentence
+                    they're reading.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Sometimes readers find themselves needing to always look for
+                    where they left off in the text. This can be quite
+                    distracting and disrupt the flow of reading.</span
                   >
                 </div>
 
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-3xl">
                   <span class="mt-8"> Design Exploration </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
                     Instead of making this just a simple online book apps named
                     LENTERA, i want to take this opportunity to make LENTERA
                     becomes top of comfortable and focused books app
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-2xl">
                   <span class="mt-8"> A light that comfort </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    one of the fun part of this project was designing a bunch of
-                    different light effect and animation to turning on and off.
-                    i took the animation inspiration from my experience when i
-                    watching film in cinema early before the movie start. i also
-                    added an finger interaction to remove the highlight.
+                    one of the fun parts of this project was designing many
+                    different light effects and animations to turn on and off. I
+                    took inspiration for the animations from my experience when
+                    I watching movies in theaters early before the movie starts.
+                    Instead of animating the light coming in and out, make it
+                    like a lantern.
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm font-thin">
-                  <span class="mt-2"> foto design </span>
-                  <span class="mt-2">
-                    image: highlight design exploration
-                  </span>
+                <div class="grid grid-cols-3 gap-8 mt-8">
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming2.gif" class="" />
+                  </div>
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming3.gif" class="" />
+                  </div>
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming5.gif" class="" />
+                  </div>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2">Image: design exploration </span>
+                </div>
+                <div class="relative flex justify-left text-xl">
                   <span class="mt-8"> Test and Iteration</span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
@@ -204,7 +155,7 @@
                     books via app
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-lg">
                   <span class="mt-8"
                     >Problem: they dont know how to turn off the highlight</span
                   >
@@ -216,7 +167,7 @@
                     finish.
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-lg">
                   <span class="mt-8"
                     >Problem: they dont used to scrolling the
                   </span>
@@ -227,10 +178,10 @@
                     page is scrolling
                   </span>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-xl">
                   <span class="mt-8">LESSON LEARNED</span>
                 </div>
-                <div class="relative flex justify-left text-sm">
+                <div class="relative flex justify-left text-lg">
                   <span class="mt-8">User Feedback on Focus Effectiveness</span>
                 </div>
                 <div class="relative flex justify-left text-sm font-thin">
