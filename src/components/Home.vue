@@ -291,7 +291,7 @@
                   </div>
                   <!-- 3 -->
                   <div
-                    @click="handleClickLentera"
+                    @click="handleClickMVP"
                     class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-white hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
                   >
                     <div
@@ -316,7 +316,7 @@
                           src="/images/Book_Detail.png"
                           class="object-contain h-80 w-192"
                         /><img
-                          src="/images/Change Membership.png"
+                          src="/images/ChangeMembership.png"
                           class="object-contain h-80 w-192"
                         />
                       </div>
