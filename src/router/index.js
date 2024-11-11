@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../components/Home.vue";
 import WorksLentera from "../components/works_lentera.vue";
+import WorksLenteraMVP from "../components/works_lenteraMVP.vue";
 import WorksDadJokes from "../components/works_dadJokes.vue";
 import WorksFigmaVariable from "../components/works_FigmaVariable.vue";
 
@@ -16,7 +17,7 @@ const routes = [
   },
   {
     path: "/lenteraMVP",
-    component: WorksLentera,
+    component: WorksLenteraMVP,
   },
   {
     path: "/FigmaVariable",

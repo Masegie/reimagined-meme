@@ -1330,6 +1330,11 @@ export default {
       router.push("/lentera");
       this.firstPorto = true;
     },
+    handleClickMVP() {
+      this.play;
+      router.push("/lenteraMVP");
+      this.firstPorto = true;
+    },
     handleClickVariable() {
       this.play;
       router.push("/FigmaVariable");
