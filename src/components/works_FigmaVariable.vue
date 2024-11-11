@@ -12,7 +12,7 @@
         <div class="mx-auto">
           <div class="absolute inset-x-0">
             <div
-              class="grow text-black text-left tracking-wide lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
+              class="grow text-black text-left lg:relative leading-relaxed text-xl sm:text-2xl lg:text-4xl px-6 pb-8 shadow-sm rounded-lg sm:px-10"
             >
               <br />
               <div class="text-left md:px-48">
@@ -21,11 +21,17 @@
                 >
                   <img
                     class="object-contain h-80 w-128"
-                    src="/images/loading.png"
+                    src="/images/beforeDim.png"
+                  />
+                  <img
+                    class="object-contain ml-4 h-80 w-128"
+                    src="/images/dim.png"
                   />
                 </div>
-                <div class="relative flex justify-left text-5xl">
-                  <span class="mt-8">Dad Jokes Loading </span>
+                <div
+                  class="relative font-poppins font-bold flex justify-left text-4xl"
+                >
+                  <span class="mt-8">Bring the lantern to Lentera</span>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                   <div>
@@ -41,7 +47,7 @@
                       <span class="mt-12">Timeline</span>
                     </div>
                     <div class="relative flex justify-left text-xl">
-                      <span class="mt-8">Q1 2024 </span>
+                      <span class="mt-8">Mar 2022 </span>
                     </div>
                   </div>
                   <div>
@@ -61,87 +67,84 @@
                     </div>
                     <div class="relative flex justify-left text-xl">
                       <span class="mt-8"
-                        >Feeling good about how this solution can boost user
-                        experience. We came up with lots of ideas, not just dad
-                        jokes, but also fun facts to add some excitement.
+                        >Trying out the solution will help us see if using
+                        highlights makes it easier for users who need extra
+                        focus.
                       </span>
                     </div>
                   </div>
                 </div>
-                <div class="relative flex mt-24 mb-8 items-center">
-                  <span class="flex-shrink mr-4 text-black">Overview </span>
+                <div class="relative flex py-24 items-center"></div>
+                <div class="relative flex py-5 items-center">
+                  <span class="flex-shrink mr-4 text-black">The Problem</span>
                   <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
-                <div
-                  class="relative flex justify-left text-sm lg:text-xl font-thin"
-                >
-                  <span class="mt-4">
-                    Lately, our users have been complaining about our website
-                    slowing down compared to when it first launched. We have
-                    over 10 internal sites used daily across all Indomaret and
-                    Indogrosir branches in Indonesia.
-                  </span>
-                </div>
-                <div class="grid grid-cols-3 gap-8 mt-8">
-                  <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
-                    <img src="/images/chatSlow.png" class="" />
-                  </div>
-                </div>
-                <div
-                  class="relative flex justify-left text-sm text-grey10 italic font-thin lg:text-sm"
-                >
+                <div class="relative flex justify-left text-xl font-thin">
                   <span class="mt-2">
-                    *Certain work details are obscured due to company policy.
-                  </span>
-                </div>
-                <div class="relative flex mt-24 mb-8 items-center">
-                  <span class="flex-shrink mr-4 text-black">Obstacles</span>
-                  <div class="flex-grow border-t border-orangeMarine"></div>
-                </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-4">
-                    So, initially we thought that simply tweaking a few queries
-                    and logic in the code would do the trick.
-                  </span>
-                </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-2">
-                    We found some issues causing the slow data processing.
-                  </span>
-                </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-1">
-                    - Multiple websites share a single server
+                    Some new book readers may not feel at ease reading on online
+                    book applications because They cant stay on track, they're
+                    having trouble staying focused and keep reading.
                   </span>
                 </div>
 
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-1">
-                    - Each site has over a million data entries that can't be
-                    deleted
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black">Challenges</span>
+                  <div class="flex-grow border-t border-orangeMarine"></div>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    1. Creating a subtle focus effect can be tricky. It should
+                    guide attention without being distracting, enhancing focus
+                    without overwhelming users.
                   </span>
                 </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-1">
-                    - When the server is full, it can't be upgraded
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    2. Maintaining Readability with Dynamic Changes Frequent
+                    shifts in highlight and dimming as users read can disrupt
+                    reading flow.
                   </span>
                 </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-1">
-                    - Many branches are still using old Windows XP computers
+
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Research and Findings
                   </span>
+                  <div class="flex-grow border-t border-orangeMarine"></div>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    I interviewed to 3 new readers who have only read books
+                    online a few times in the last year and 3 old readers who
+                    have done the opposite. I discovered that
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl font-regular">
+                  <span class="mt-4"> Struggle to stay focused</span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Readers with ADHD struggle to stay focused on the sentence
+                    they're reading.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Sometimes readers find themselves needing to always look for
+                    where they left off in the text. This can be quite
+                    distracting and disrupt the flow of reading.</span
+                  >
+                </div>
+                <div class="relative mt-8 flex justify-center">
+                  <img
+                    class="object-contain h-96 w-192"
+                    src="/images/Read_Book_Screen.png"
+                  />
+                </div>
+                <div
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
+                >
+                  <span class="mt-2">Image: Reading Page </span>
                 </div>
                 <div class="relative flex mt-24 mb-8 items-center">
                   <span class="flex-shrink mr-4 text-black"
@@ -149,47 +152,98 @@
                   >
                   <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
-
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-4">
-                    We think we've made it clear what the issue is, and we're
-                    eager to solve it right away. We've looked into different
-                    ways to keep our users at ease during loading times. Our
-                    plan is to entertain them with fun facts or jokes to make
-                    the wait more enjoyable.
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Instead of making this just a simple online book apps named
+                    LENTERA, i want to take this opportunity to make LENTERA
+                    becomes top of comfortable and focused books app
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8"> A light that comfort </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    one of the fun parts of this project was designing many
+                    different light effects and animations to turn on and off. I
+                    took inspiration for the animations from my experience when
+                    I watching movies in theaters early before the movie starts.
+                    Instead of animating the light coming in and out, make it
+                    like a lantern.
                   </span>
                 </div>
                 <div class="grid grid-cols-3 gap-8 mt-8">
-                  <div class="lg:col-span-3 col-span-3 grid grid-cols-1">
-                    <img src="/images/loadingAnimation.gif" class="" />
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming2.gif" class="" />
+                  </div>
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming3.gif" class="" />
+                  </div>
+                  <div class="lg:col-span-1 col-span-1 grid grid-cols-1">
+                    <img src="/images/dimming5.gif" class="" />
                   </div>
                 </div>
                 <div
-                  class="relative flex justify-left text-sm font-thin italic lg:text-md"
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
                 >
-                  <span class="mt-2"
-                    >" If we can't make it load faster, let's make waiting more
-                    comfy for users "
+                  <span class="mt-2">Image: design exploration </span>
+                </div>
+                <div class="relative flex mt-24 mb-8 items-center">
+                  <span class="flex-shrink mr-4 text-black"
+                    >Test and Iteration</span
+                  >
+                  <div class="flex-grow border-t border-orangeMarine"></div>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Usability Tests with some book reader friend who never
+                    trying read book on app and my friend who usually reading
+                    books via app
                   </span>
                 </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
+                <div class="relative flex justify-left text-2xl">
                   <span class="mt-8"
-                    >After running our tests, we're feeling quite positive about
-                    how this solution can improve user experience. We
-                    brainstormed various ideas, not limited to just dad jokes,
-                    but also including some interesting fun facts to spice
-                    things up a bit.
+                    >Problem: they dont know how to turn off the highlight</span
+                  >
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    with no button that shine, and cant click they dont
+                    understand how to turing the highlight off after they
+                    finish.
                   </span>
                 </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8"
+                    >Problem: They have trouble opening the next page
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    Users struggle to open the next page because the pagination
+                    section is too dark, making it hard to see.
+                  </span>
+                </div>
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8">Iteration: Create the Moon button </span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    I put in a moon button for turning on and off that isn't
+                    annoying even when it's on, and it also displays pagination.
+                  </span>
+                </div>
+                <div class="relative flex justify-center">
+                  <img
+                    class="object-contain h-96 w-192"
+                    src="/images/beforeAfterDim.png"
+                  />
+                </div>
                 <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
+                  class="relative flex justify-center text-sm font-thin italic lg:text-md"
                 >
                   <span class="mt-2"
-                    >And we ended up creating hundreds dad jokes and fun facts.
+                    >Image: before and after the iteration
                   </span>
                 </div>
                 <div class="relative flex mt-24 mb-8 items-center">
@@ -198,14 +252,16 @@
                   >
                   <div class="flex-grow border-t border-orangeMarine"></div>
                 </div>
-                <div
-                  class="relative flex justify-left text-sm font-thin lg:text-xl"
-                >
-                  <span class="mt-4"
-                    >By providing more ways for users to engage, we can really
-                    boost how comfortable and relaxed they feel. This boost adds
-                    to the whole user experience, making the interaction
-                    environment more enjoyable.
+                <div class="relative flex justify-left text-2xl">
+                  <span class="mt-8">User Feedback on Focus Effectiveness</span>
+                </div>
+                <div class="relative flex justify-left text-xl font-thin">
+                  <span class="mt-2">
+                    You’d learn whether the highlight feature effectively
+                    enhances focus for most users, as well as which user groups
+                    find it most helpful Without gathering any feedback from out
+                    user, we might have ended up with just a nice-to-have idea
+                    instead of a valuable feature.
                   </span>
                 </div>
                 <br />
