@@ -120,7 +120,7 @@
 
                 <div class="relative flex py-5 items-center justify-center">
                   <a
-                    href="https://dribbble.com/dreamola"
+                    href="https://www.instagram.com/masegie/"
                     class="font-cursive mr-8 text-text-grey70 text-center"
                     target="_blank"
                     >instagram</a
