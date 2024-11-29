@@ -265,7 +265,7 @@
                     </div>
                   </div>
                   <!-- 2 -->
-                  <div
+                  <!-- <div
                     @click="handleClickDadJokesLoading"
                     class="p-4 cursor-pointer border border-grey20 hover:border-orangeMarine rounded-xl relative item-center hover:bg-white hover:drop-shadow-[0_0px_8px_rgba(255,92,0,1)]"
                   >
@@ -315,7 +315,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- 3 -->
                   <div
                     @click="handleClickMVP"
