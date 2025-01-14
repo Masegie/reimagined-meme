@@ -58,6 +58,16 @@
                   <span class="flex-shrink mx-4 text-black">Experiences</span>
                 </div>
                 <div class="text-2xl sm:text-4xl font-black pt-8">
+                  Freelance
+                </div>
+                <div
+                  class="text-sm sm:text-2xl relative flex pt-8 items-center"
+                >
+                  <div class="flex-grow">Web and Mobile Designer</div>
+                  <div class="flex-grow text-right">2022-Present</div>
+                </div>
+
+                <div class="text-2xl sm:text-4xl font-black pt-8">
                   Indomaret Group
                 </div>
                 <div
@@ -225,8 +235,7 @@
                     </div>
                     <div class="text-grey10 text-left">
                       <div class="text-2xl lg:text-2xl text-black">
-                        My client disappeared after approving my design on my
-                        first project.
+                        Exploring my first project.
                       </div>
                     </div>
                     <div class="grid grid-cols-3 gap-8 mt-4">
@@ -325,7 +334,7 @@
                       class="text-left text-grey10 flex justify-between text-xs py-2"
                     >
                       <div>MOBILE APP . UI DESIGNER</div>
-                      <div>2021</div>
+                      <div>2022</div>
                     </div>
                     <div class="text-grey10 text-left">
                       <div class="text-2xl lg:text-2xl text-black">
@@ -1284,7 +1293,7 @@ export default {
     return {
       n: 1,
       content: ["Masegie Handoyo"],
-      content2nd: ["A Developer and Designer based in Jakarta, Indonesia"],
+      content2nd: ["A Web and Mobile Designer based in Jakarta, Indonesia"],
       isMeActive: true,
       isMyWorkActive: false,
       isMyContactActive: false,
@@ -1295,7 +1304,7 @@ export default {
       currentWord: "",
       wordIdx: 0,
 
-      displayText2nd: ["A Developer and Designer based in Jakarta, Indonesia"],
+      displayText2nd: ["A Web and Mobile Designer based in Jakarta, Indonesia"],
       currentWord2nd: "",
       wordIdx2nd: 0,
 
@@ -1421,10 +1430,10 @@ export default {
       this.displayText3rd = [""];
       this.content = ["Masegie Handoyo"];
       this.content2nd = [
-        "A Developer and Designer based in Jakarta, Indonesia",
+        "A Web and Mobile Designer based in Jakarta, Indonesia",
       ];
       this.content3rd = [
-        "A Developer and Designer based in Jakarta, Indonesia",
+        "A Web and Mobile Designer based in Jakarta, Indonesia",
       ];
 
       this.start();

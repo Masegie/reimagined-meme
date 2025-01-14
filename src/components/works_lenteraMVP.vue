@@ -284,7 +284,7 @@ export default {
     return {
       n: 1,
       content: ["Masegie Handoyo"],
-      content2nd: ["A Developer and Designer based in Jakarta, Indonesia"],
+      content2nd: ["A Web and Mobile Designer based in Jakarta, Indonesia"],
       isMeActive: true,
       isMyWorkActive: false,
       isMyContactActive: false,
@@ -295,7 +295,7 @@ export default {
       currentWord: "",
       wordIdx: 0,
 
-      displayText2nd: ["A Developer and Designer based in Jakarta, Indonesia"],
+      displayText2nd: ["A Web and Mobile Designer based in Jakarta, Indonesia"],
       currentWord2nd: "",
       wordIdx2nd: 0,
 
@@ -359,10 +359,10 @@ export default {
       this.displayText3rd = [""];
       this.content = ["Masegie Handoyo"];
       this.content2nd = [
-        "A Developer and Designer based in Jakarta, Indonesia",
+        "A Web and Mobile Designer based in Jakarta, Indonesia",
       ];
       this.content3rd = [
-        "A Developer and Designer based in Jakarta, Indonesia",
+        "A Web and Mobile Designer based in Jakarta, Indonesia",
       ];
 
       this.start();
